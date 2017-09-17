@@ -1,0 +1,99 @@
+.nav-link {
+    padding: 0.35rem 1rem;
+    text-transform: lowercase;
+}
+
+@media screen and (min-width:991px) {
+    li.nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+    }
+}
+
+//login
+.fr-login {
+    .modal-header {
+        @include hanken-light;
+        justify-content: flex-end;
+        border-bottom: none;
+    }
+    .modal-body {
+        padding-top: 0;
+        .modal-title {
+            text-align: center;
+        }
+        .fr-login-form {
+            .form-group {
+                label {
+                    font-size: 14px !important;
+                    @include Alte-bold;
+                }
+                input {
+                    border-radius: 30px;
+                    border-color: $yellow;
+                    &.not-valid {
+                        border-color: $red;
+                        background: #fff0ed;
+                    }
+                }
+            }
+            button {
+                width: 100%;
+                margin-bottom: 0.5rem;
+                border-radius: 38px;
+                outline: none;
+                &.btn-login {
+                    border: 2px solid $red;
+                    background: none;
+                    cursor: pointer;
+                    margin-top: 1rem;
+                    @include transition-basic;
+                    &:hover {
+                        background: $red;
+                        color: $white;
+                    }
+                }
+                &.btn-facebook {
+                    border: 2px solid #5774bd;
+                    background: none;
+                    cursor: pointer;
+                    @include transition-basic;
+                    &:hover {
+                        background: #5774bd;
+                        color: $white;
+                    }
+                }
+                &.btn-twitter {
+                    border: 2px solid #58c8ed;
+                    background: none;
+                    cursor: pointer;
+                    @include transition-basic;
+                    &:hover {
+                        background: #58c8ed;
+                        color: $white;
+                    }
+                }
+                &.btn-retun {
+                    border: 2px solid $medium-gray;
+                    background: none;
+                    cursor: pointer;
+                    @include transition-basic;
+                    &:hover {
+                        background: $medium-gray;
+                        color: $white;
+                    }
+                }
+            }
+            .login-actions {
+                margin-top: 1rem;
+                h3 {
+                    @include Alte-regular;
+                    font-size: 1rem;
+                    a {
+                        color: $red;
+                        @include Alte-bold;
+                    }
+                }
+            }
+        }
+    }
+}

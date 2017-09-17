@@ -1,6 +1,394 @@
 @import 'var';
+@import 'fonts';
 @import 'mixins';
-
-body{
-    background: $background
+@import 'overides';
+body {
+    @include Alte-bold;
 }
+
+.wrapper-main {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.fr-wrapp {
+    max-width: $main-width;
+}
+
+.fr-wrapp-small {
+    max-width: 980px;
+}
+
+.frugl-header {
+    display: block;
+    position: relative;
+    .header-bg {
+        background-size: cover !important;
+        background-position: 50% 50% !important;
+        position: relative;
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            background: $orange;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            opacity: 0.85;
+        }
+        &.nearby-bg {
+            background: url('../images/nearby.jpg');
+        }
+        &.travel-bg {
+            background: url('../images/travel.jpg');
+        }
+        &.shopping-bg {
+            background: url('../images/shopping.jpg');
+        }
+    }
+    .col-wrapper {
+        height: 380;
+        min-height: 380px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h2 {
+            text-align: center;
+            @include hanken-light;
+            font-size: 36px;
+            line-height: 1.5;
+            z-index: 2;
+            color: $white;
+        }
+        button {
+            background: transparent;
+            color: $white;
+            width: 200px;
+            border: 2px solid $white;
+            z-index: 2;
+            padding: 0.2rem 1rem;
+            border-radius: 2rem;
+            cursor: pointer;
+            outline: none;
+            &.btn-nearby {
+                border-color: $yellow;
+                @include transition-basic;
+                &:hover {
+                    background: $yellow;
+                }
+            }
+            &.btn-travel {
+                border-color: $green;
+                @include transition-basic;
+                &:hover {
+                    background: $green;
+                }
+            }
+            &.btn-shopping {
+                border-color: $purple;
+                @include transition-basic;
+                &:hover {
+                    background: $purple;
+                }
+            }
+        }
+    }
+    .fr-header-sction-bar {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        height: 60px;
+        background: rgba(0, 0, 0, 0.5);
+        .bulletings {
+            .location-wrap {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-right: 1px solid $white;
+                height: 48px;
+                margin: 6px 0;
+                .location-img {
+                    width: 36px;
+                    height: 36px;
+                    display: block;
+                    background: url('../images/sprite.png') $orange;
+                    background-size: 120px;
+                    background-position: -89px;
+                    background-repeat: no-repeat;
+                    border-radius: 36px;
+                    margin: 0 1rem 0 0;
+                }
+            }
+            .location-details {
+                display: flex;
+                flex-direction: column;
+                color: $white;
+                h3 {
+                    @include Alte-regular;
+                    font-size: 18px;
+                    line-height: 16px;
+                    margin: 0;
+                }
+                span {
+                    @include Alte-regular;
+                    font-size: 12px;
+                    line-height: 12px;
+                    margin: 0;
+                    display: block;
+                    text-align: left;
+                    position: relative;
+                    cursor: pointer;
+                    &:after {
+                        content: '';
+                        display: inline-block;
+                        position: absolute;
+                        width: 6px;
+                        height: 6px;
+                        border-right: 1px solid $white;
+                        border-bottom: 1px solid $white;
+                        transform: rotate(45deg);
+                        top: 3px;
+                        right: -3px;
+                    }
+                }
+            }
+            .bulet-wrap {
+                display: flex;
+                height: 48px;
+                margin: 6px 0;
+                align-items: center;
+                justify-content: center;
+                border-right: 1px solid $white;
+            }
+            .bulets {
+                @include Alte-regular;
+                font-size: 18px;
+                color: $white;
+                text-align: center;
+                text-transform: uppercase;
+                margin: 0;
+                span {
+                    font-size: 12px;
+                    display: block;
+                }
+            }
+            .col {
+                padding: 0;
+                &:last-child {
+                    .bulet-wrap {
+                        border-right: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.navbar-brand {
+    margin-right: 70px;
+    img {
+        height: 36px;
+    }
+}
+
+.navbar-brand {
+    &.mobile {
+        display: none;
+    }
+}
+
+.burger {
+    &.sidenav-toggle {
+        display: none;
+    }
+}
+
+.fr-header-nav {
+    min-height: 80px;
+    box-sizing: border-box;
+    position: relative;
+    background: $background !important;
+    .fr-searchbar {
+        width: 100%;
+        display: none;
+        flex-wrap: wrap;
+        background: $white;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        z-index: 999;
+        input[type=search] {
+            padding: 0 20% 0 calc(20% + 56px);
+            width: 100%;
+            margin: 0 auto;
+            height: 80px;
+            border: none;
+            background: $background;
+            outline: none;
+            background-image: url('../images/search-icon-line.png');
+            background-repeat: no-repeat;
+            background-position: 20% 50%;
+            background-size: 36px;
+        }
+        .search-results {
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+            background: $white;
+            padding: 0 0 1rem 0;
+            margin: 0;
+            .search-item {
+                width: $main-width;
+                padding: 0 20%;
+                list-style: 0;
+                @include Alte-regular;
+                font-size: 1rem;
+                line-height: 2rem;
+                &:hover {
+                    cursor: pointer;
+                }
+                .category {
+                    color: $red;
+                    @include Alte-bold;
+                }
+                .number {
+                    @include Alte-bold;
+                    color: $dark-gray;
+                    &:before,
+                    &:after {
+                        content: '';
+                        display: inline-block;
+                        padding: 0 2px;
+                    }
+                    &:before {
+                        content: '('
+                    }
+                    &:after {
+                        content: ')'
+                    }
+                }
+            }
+            .suggestions {
+                display: block;
+                width: $main-width;
+                padding: 0 20%;
+                list-style: 0;
+                color: $medium-gray;
+                @include Alte-regular;
+                font-size: 14px;
+                line-height: 42px;
+            }
+        }
+    }
+}
+
+.fr-navbar {
+    .back-to-home {
+        @include hanken-light;
+        font-size: 24px;
+        line-height: 42px;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        color: $red;
+        display: none;
+        .close-sidnav {
+            font-size: 42px !important;
+        }
+    }
+    ul {
+        li {
+            a {
+                @include hanken-light;
+                &:after {
+                    display: none;
+                }
+            }
+        }
+        li>a {
+            border: 2px solid #333;
+            border-radius: 40px;
+            padding: 0.4rem 2rem !important;
+            margin: 0 1rem;
+            display: inline-block;
+            &.fr-nearby {
+                border-color: $yellow;
+                @include transition-basic;
+                &:hover {
+                    background: $yellow;
+                }
+            }
+            &.fr-travel {
+                border-color: $green;
+                @include transition-basic;
+                &:hover {
+                    background: $green;
+                }
+            }
+            &.fr-shopping {
+                border-color: $purple;
+                @include transition-basic;
+                &:hover {
+                    background: $purple;
+                }
+            }
+        }
+    }
+}
+
+.fr-action-bar-wrap {
+    display: flex;
+    align-items: center;
+    .fr-action-bar {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        li {
+            list-style: none;
+            a {
+                padding: 0.5rem 1rem;
+                &:first-child {
+                    margin-right: 1rem;
+                }
+                &.add-event,
+                &.search-icon {
+                    width: 36px;
+                    height: 36px;
+                    border-radius: 36px;
+                    background: $orange;
+                    display: block;
+                }
+                &.search-icon {
+                    background: url(../images/sprite.png) #db5b46;
+                    background-size: 118px;
+                    background-position: -56px 5px;
+                    background-repeat: no-repeat;
+                }
+                &.add-event {
+                    background: url(../images/sprite.png) #db5b46;
+                    background-size: 120px;
+                    background-position: -26px 5px;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+    }
+    .login-btn {
+        display: inline-flex;
+        padding: 0.4rem 2rem;
+        border: 2px solid $red;
+        border-radius: 2rem;
+        @include hanken-light;
+        @include transition-basic;
+        &:hover {
+            cursor: pointer;
+            background: $red;
+            color: $white;
+        }
+    }
+}
+
+@import 'media';

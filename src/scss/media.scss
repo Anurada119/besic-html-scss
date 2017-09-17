@@ -1,0 +1,211 @@
+@media screen and (min-width:991px) {
+    li.nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+    }
+}
+
+@media screen and (max-width:991px) {
+    // .wrapper-main,
+    // .frugl-header {
+    //     padding: 0;
+    // }
+    .burger {
+        &.sidenav-toggle {
+            display: block;
+        }
+    }
+    .back-to-home {
+        display: flex !important;
+    }
+    .navbar-brand {
+        margin-right: 0px;
+        display: none;
+        &.mobile {
+            display: flex;
+            flex: 1;
+            margin-left: 1rem;
+        }
+    }
+    .fr-wrapp {
+        justify-content: initial !important;
+    }
+    .fr-action-bar-wrap {
+        order: 1;
+    }
+    .fr-navbar {
+        width: 95%;
+        z-index: 9999;
+        background: $white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-height: 100vh;
+        transform: translate(-100%);
+        display: block;
+        border-radius: 0 20px 20px 0;
+        @include transition-basic;
+        &.sidenav-open {
+            transform: translate(0%);
+        }
+        ul {
+            li {
+                a {
+                    @include hanken-light;
+                    &:after {
+                        display: inline-block;
+                    }
+                }
+            }
+            li>a {
+                display: block;
+                &.fr-nearby {
+                    background: $yellow;
+                }
+                &.fr-travel {
+                    background: $green;
+                }
+                &.fr-shopping {
+                    background: $purple;
+                }
+            }
+        }
+        .dropdown-menu {
+            border: none;
+        }
+    }
+    .col-wrapper {
+        button {
+            &.btn-nearby {
+                background: $yellow;
+            }
+            &.btn-travel {
+                background: $green;
+            }
+            &.btn-shopping {
+                background: $purple;
+            }
+        }
+    }
+    .frugl-header {
+        >.row {
+            >div {
+                position: relative;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    width: 90%;
+                    height: 2px;
+                    background: $white;
+                    display: block;
+                    bottom: 0;
+                    left: 5%;
+                }
+            }
+            >div {
+                &:last-child {
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .fr-header-sction-bar {
+            position: relative;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            height: auto;
+            background: $white;
+            .bulletings {
+                .col:first-child {
+                    order: 4;
+                }
+                .col:last-child {
+                    border-bottom: 1px solid $dark-gray;
+                }
+                .location-wrap {
+                    margin: 1.6rem 0;
+                    .location-img {
+                        width: 60px;
+                        height: 60px;
+                        display: block;
+                        background: url('../images/sprite.png') $orange;
+                        background-size: 200px;
+                        background-position: -148px;
+                        background-repeat: no-repeat;
+                        border-radius: 36px;
+                        margin: 0 1rem 0 0;
+                    }
+                }
+                .location-details {
+                    display: flex;
+                    flex-direction: row;
+                    color: $dark-gray;
+                    h3 {
+                        @include Alte-bold;
+                        font-size: 24px;
+                        line-height: 24px;
+                        margin: 0;
+                        text-transform: uppercase;
+                    }
+                    span {
+                        @include Alte-bold;
+                        font-size: 14px;
+                        line-height: 24px;
+                        margin: 0;
+                        display: block;
+                        text-align: left;
+                        position: relative;
+                        cursor: pointer;
+                        margin-left: 0.5rem;
+                        color: $red;
+                        &:after {
+                            content: ')';
+                            display: inline;
+                            border: none !important;
+                            position: relative;
+                            top: inherit;
+                            right: inherit;
+                        }
+                        &:before {
+                            content: '(';
+                            display: inline;
+                        }
+                    }
+                }
+                .bulet-wrap {
+                    display: flex;
+                    height: auto;
+                    margin: 6px 0;
+                    align-items: center;
+                    justify-content: flex-start;
+                    padding: 1rem;
+                    border-right: none;
+                }
+                .bulets {
+                    @include Alte-bold;
+                    font-size: 16px;
+                    color: $dark-gray;
+                    text-align: left;
+                    text-transform: uppercase;
+                    margin: 0;
+                    padding-left: 30px;
+                    &:before {
+                        content: '';
+                        width: 30px;
+                        height: 30px;
+                        position: absolute;
+                        display: inline-block;
+                        background: $black;
+                        left: 0px;
+                        top: 15px;
+                    }
+                    span {
+                        font-size: inherit;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}

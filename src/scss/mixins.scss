@@ -1,0 +1,23 @@
+@mixin hanken-book {
+    font-family: 'Hanken';
+    font-weight: normal;
+}
+
+@mixin hanken-light {
+    font-family: 'Hanken';
+    font-weight: 300;
+}
+
+@mixin Alte-regular {
+    font-family: 'Alte Haas Grotesk';
+    font-weight: normal;
+}
+
+@mixin Alte-bold {
+    font-family: 'Alte Haas Grotesk';
+    font-weight: bold;
+}
+
+@mixin transition-basic {
+    transition: all 0.3s ease-in-out;
+}

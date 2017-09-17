@@ -7,48 +7,293 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
+
+    <title>Frugl</title>
 
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
+    <div class="wrapper-main container-fluid">
+        <!-- start of wrapper -->
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+        <!-- START of navigation -->
+
+        <nav class="fr-header-nav navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container fr-wrapp">
+                <div class="burger sidenav-toggle">
+                    <span class="navbar-toggler-icon"></span>
+                </div>
+                <a class="navbar-brand" href="#">
+                    <img src="images/frugl-logo.png" alt="frugl">
+                </a>
+
+                <a class="navbar-brand mobile" href="#">
+                    <img src="images/frugl-logo-mobile.png" alt="frugl">
+                </a>
+                <!-- <button class="navbar-toggler"type="button"datadata-toggle="collapse"data-target="#navbarSupportedContent"aria-controls="navbarSupportedContent"aria-expanded="false"aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button> -->
+
+                <div class="collapse navbar-collapse fr-navbar" id="navbarSupportedContent">
+                    <div class="back-to-home">
+                        <span>Home</span>
+                        <span class="close-sidnav">
+                            <span aria-hidden="true">&times;</span>
+                        </span>
+                    </div>
+
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fr-nearby" href="http://example.com" id="nearbyLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Nearby
+                                    </a>
+                            <div class="dropdown-menu" aria-labelledby="nearbyLink">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fr-travel" href="http://example.com" id="travelLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Travel
+                                    </a>
+                            <div class="dropdown-menu" aria-labelledby="travelLink">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fr-shopping" href="http://example.com" id="shoppingLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Shopping
+                                    </a>
+                            <div class="dropdown-menu" aria-labelledby="shoppingLink">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="fr-action-bar-wrap right">
+                    <ul class="fr-action-bar">
+                        <li>
+                            <a class="add-event" href="#"></a>
+                        </li>
+                        <li>
+                            <a class="search-icon" href="#"></a>
+                        </li>
+                    </ul>
+                    <div class="login-btn" data-toggle="modal" data-target="#signIn">
+                        Login
+                    </div>
+                </div>
+            </div>
+
+            <div class="fr-searchbar">
+                <input type="search" name="main-search" autofocus>
+                <ul class="search-results">
+                    <span class="suggestions">Search Suggestions</span>
+                    <li class="search-item"><span>high</span> in <span class="category">Woments fashion</span><span class="number">56</span></li>
+                    <li class="search-item"><span>high</span> in <span class="category">Woments fashion</span><span class="number">56</span></li>
+                    <li class="search-item"><span>high</span> in <span class="category">Woments fashion</span><span class="number">56</span></li>
+                    <li class="search-item"><span>high</span> in <span class="category">Woments fashion</span><span class="number">56</span></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- END of navigation -->
+
+
+        <div class="container-fluid frugl-header">
+            <div class="row">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-4 header-bg nearby-bg">
+                    <div class="col-wrapper">
+                        <h2>Lorem ipsum dolor sit amet, consectetur.</h2>
+                        <button class="btn-nearby">nearby</button>
+                    </div>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-4 header-bg travel-bg">
+                    <div class="col-wrapper">
+                        <h2>Lorem ipsum dolor sit amet, consectetur.</h2>
+                        <button class="btn-travel">travel</button>
+                    </div>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-4 header-bg shopping-bg">
+                    <div class="col-wrapper">
+                        <h2>Lorem ipsum dolor sit amet, consectetur.</h2>
+                        <button class="btn-shopping">shopping</button>
+                    </div>
+                </div>
+            </div>
+            <div class="fr-header-sction-bar">
+                <div class="container fr-wrapp-small">
+                    <div class="row bulletings">
+                        <div class="col col-12 col-sm-12 col-md-12 col-lg-3">
+                            <div class="location-wrap">
+                                <div class="location-img">
+
+                                </div>
+                                <div class="location-details">
+                                    <h3 class="location-curent">
+                                        London
+                                    </h3>
+                                    <span>
+                                        Change 
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-12 col-sm-12 col-md-12 col-lg-3">
+                            <div class="bulet-wrap">
+                                <h3 class="bulets">
+                                    <span>BROWSE THROUGH</span> +110.000 DEALS
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="col col-12 col-sm-12 col-md-12 col-lg-3">
+                            <div class="bulet-wrap">
+                                <h3 class="bulets">
+                                    <span>in more than</span> 1.100 EUROPEAN CITIES
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="col col-12 col-sm-12 col-md-12 col-lg-3">
+                            <div class="bulet-wrap">
+                                <h3 class="bulets">
+                                    <span>from over</span> 150 PARTNERS
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </nav>
-    <h1>Hello, world!</h1>
+        <h1>Hello, world!</h1>
+
+        <!-- [[[[[[[[[[[[[[[[[[[[ START of Modals ]]]]]]]]]]]]]]]]]]]] -->
+        <div class="modal fade fr-login" id="signIn" tabindex="-1" role="dialog" aria-labelledby="signin" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+
+                        <form class="fr-login-form" validate>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control not-valid" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Username">
+                                <small id="in-notvalid" class="form-text text-danger">Incorrect Username</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+                            <button type="submit" class="btn btn-login">Login</button>
+                            <button type="submit" class="btn btn-facebook">Login with FaceBook</button>
+                            <button type="submit" class="btn btn-twitter">Login with Twitter</button>
+
+                            <div class="form-group login-actions">
+                                <h3>Not a Member? <a href="" data-toggle="modal" data-target="#register" data-dismiss="modal" aria-label="Close">Join</a></h3>
+                                <h3>Forgot Your Password? <a href="" data-toggle="modal" data-target="#resetpassqord" data-dismiss="modal" aria-label="Close">Click Here</a></h3>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- register modal -->
+        <div class="modal fade fr-login" id="register" tabindex="-1" role="dialog" aria-labelledby="signin" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                    </div>
+                    <div class="modal-body">
+                        <h5 class="modal-title" id="Register">Register</h5>
+
+                        <form class="fr-login-form" validate>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control not-valid" id="Username" aria-describedby="emailHelp" placeholder="Enter Username">
+                                <small id="" class="form-text text-danger">Incorrect Username</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="Password" placeholder="Password">
+                            </div>
+                            <button type="submit" class="btn btn-login">Login</button>
+                            <button type="submit" class="btn btn-facebook">Login with FaceBook</button>
+                            <button type="submit" class="btn btn-twitter">Login with Twitter</button>
+
+                            <div class="form-group login-actions">
+                                <h3>Not a Member? <a href="">Join</a></h3>
+                                <h3>Forgot Your Password? <a href="">Click Here</a></h3>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- reset password -->
+        <div class="modal fade fr-login" id="resetpassqord" tabindex="-1" role="dialog" aria-labelledby="signin" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                    </div>
+                    <div class="modal-body">
+                        <h5 class="modal-title" id="ResetPassword">Reset Password</h5>
+
+                        <form class="fr-login-form" validate>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control not-valid" id="EnterEmail" aria-describedby="emailHelp" placeholder="Enter Email">
+                                <small id="" class="form-text text-danger">Incorrect Email</small>
+                            </div>
+                            <button type="submit" class="btn btn-login">Reset Password</button>
+                            <button type="submit" class="btn btn-retun" data-toggle="modal" data-target="#signIn" data-dismiss="modal" aria-label="Close">Return to Login</button>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- end of wrapper -->
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
-        crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"crossorigin="anonymous"></script> -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
