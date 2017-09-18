@@ -208,4 +208,40 @@
             }
         }
     }
+    .item-slider {
+        .item-section-header {
+            margin-top: 60px;
+            margin-bottom: 0rem;
+            .item-section-title {
+                font-size: 28px;
+                line-height: 28px;
+                margin: 0;
+            }
+            div {
+                button {
+                    background: transparent;
+                    border: none !important;
+                    padding: 0;
+                    &.nearby-btn {
+                        border-color: none;
+                        &:hover {
+                            background: none;
+                        }
+                    }
+                    &.travel-btn {
+                        border-color: none;
+                        &:hover {
+                            background: none;
+                        }
+                    }
+                    &.shopping-btn {
+                        border-color: none;
+                        &:hover {
+                            background: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
