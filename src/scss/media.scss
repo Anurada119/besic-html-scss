@@ -17,6 +17,14 @@
     .back-to-home {
         display: flex !important;
     }
+
+    .mega-dropdown-menu {
+        padding: 20px 0px;
+        width: 100%;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        min-width: auto;
+    }
     .navbar-brand {
         margin-right: 0px;
         display: none;
@@ -72,6 +80,26 @@
         .dropdown-menu {
             border: none;
         }
+        .dropdown-toggle::after{
+            position: absolute;
+            top: 18px;
+            right: 30px;
+        }
+        
+    }
+    .mega-dropdown {
+        position: relative !important;
+        width: 100%;
+    }
+    
+    .mega-dropdown-menu {
+        padding: 20px 0px;
+        width: 100%;
+        margin: 0;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        //min-width: 100vh;
+        left: -20vh;
     }
     .col-wrapper {
         button {
