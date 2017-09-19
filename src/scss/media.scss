@@ -98,6 +98,9 @@
         //min-width: 100vh;
         left: -20vh;
     }
+    .fr-header-nav {
+        background: $white !important;
+    }
     .col-wrapper {
         button {
             &.btn-nearby {
@@ -312,5 +315,8 @@
                 }
             }
         }
+    }
+    .mobile-btns-wrapp {
+        display: block;
     }
 }
