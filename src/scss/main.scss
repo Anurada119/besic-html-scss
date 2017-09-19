@@ -207,6 +207,33 @@ body {
     &.sidenav-toggle {
         display: none;
     }
+    .burger-icon {
+        width: 40px;
+        height: 28px;
+        display: block;
+        .line {
+            width: 100%;
+            height: 4px;
+            background: $orange;
+            border-radius: 4px;
+            display: block;
+            &:after,
+            &:before {
+                width: 100%;
+                height: 4px;
+                display: block;
+                content: '';
+                border-radius: 4px;
+                background: $orange;
+            }
+            &:before {
+                transform: translate(0, 12px);
+            }
+            &:after {
+                transform: translate(0, 20px);
+            }
+        }
+    }
 }
 
 .fr-header-nav {
@@ -289,10 +316,10 @@ body {
 }
 
 .fr-navbar {
-    .navbar-collapse{
-        margin-bottom: 20px;
+    .navbar-collapse {
+        //margin-bottom: 20px;
     }
-    .dropdown-header{
+    .dropdown-header {
         color: $black;
     }
     .back-to-home {
@@ -320,14 +347,14 @@ body {
                 }
             }
         }
-        li > a {
+        li>a {
             margin: 0 1rem;
             display: inline-block;
             color: $dark-gray;
             &.fr-nearby {
                 border: 2px solid $yellow;
                 border-radius: 40px;
-                padding: 0.4rem 2rem !important;
+                padding: 0.4rem 2rem 0.2rem !important;
                 @include transition-basic;
                 &:hover {
                     background: $yellow;
@@ -337,7 +364,7 @@ body {
             &.fr-travel {
                 border: 2px solid $green;
                 border-radius: 40px;
-                padding: 0.4rem 2rem !important;
+                padding: 0.4rem 2rem 0.2rem !important;
                 @include transition-basic;
                 &:hover {
                     background: $green;
@@ -347,7 +374,7 @@ body {
             &.fr-shopping {
                 border: 2px solid $purple;
                 border-radius: 40px;
-                padding: 0.4rem 2rem !important;
+                padding: 0.4rem 2rem 0.2rem !important;
                 @include transition-basic;
                 &:hover {
                     background: $purple;
@@ -411,7 +438,236 @@ body {
 }
 
 @import 'sliders';
-
 @import 'footer';
+.fr-footer {
+    background: $medium-gray;
+    .footer {
+        max-width: $main-width;
+        margin: 5rem auto 0;
+        padding: 2rem 2rem 1rem 2rem;
+        &.mobile {
+            display: none;
+        }
+    }
+    .footer-line-1 {
+        padding-bottom: 36px;
+        margin-bottom: 36px;
+        border-bottom: 1px solid $white;
+        .col {
+            padding: 0;
+        }
+    }
+    .footer-line-2 {
+        padding-bottom: 36px;
+        border-bottom: 1px solid $white;
+        .col {
+            padding: 0;
+        }
+    }
+    .footer-links {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            list-style: none;
+            width: 33%;
+            a {
+                @include Alte-regular;
+                font-size: 0.9rem;
+                color: $white;
+                text-transform: capitalize;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .frugl-logo-and-tagline {
+        display: flex;
+        align-items: flex-start;
+        img {
+            width: 120px;
+            margin-right: 50px;
+        }
+        .frugl-tagline {
+            @include hanken-light;
+            font-size: 1.5rem;
+            line-height: 2.2rem;
+            color: $white;
+        }
+    }
+    .frugl-address {
+        @include Alte-regular;
+        font-size: 0.9rem;
+        color: $white;
+        line-height: 2;
+        span {
+            display: block;
+        }
+    }
+    .social-links {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        li {
+            list-style: none;
+            a {
+                color: $white;
+                @include Alte-regular;
+                font-size: 0.9rem;
+                &:hover {
+                    text-decoration: none;
+                }
+                span.solcial-link-name {
+                    display: none;
+                }
+                .social-link {
+                    display: block;
+                    width: 70px;
+                    height: 70px;
+                    margin: 0 1rem 0 0;
+                    &.tw {
+                        background: url('../images/socialicons.png');
+                        background-repeat: no-repeat;
+                        background-position: 0 0;
+                    }
+                    &.ig {
+                        background: url('../images/socialicons.png');
+                        background-repeat: no-repeat;
+                        background-position: -100px 0;
+                    }
+                    &.fb {
+                        background: url('../images/socialicons.png');
+                        background-repeat: no-repeat;
+                        background-position: -200px 0;
+                    }
+                    &.sc {
+                        background: url('../images/socialicons.png');
+                        background-repeat: no-repeat;
+                        background-position: -300px 0;
+                    }
+                }
+            }
+        }
+    }
+    .copyright {
+        padding-top: 1rem;
+        h6 {
+            @include Alte-regular;
+            font-size: 14px;
+            color: $white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            width: 100%;
+        }
+    }
+}
+
+#changeRegion {
+    .city-title-letter {
+        .city-title-header {
+            display: flex;
+            background: $orange;
+            border-radius: 30px;
+            font-size: 18px;
+            line-height: 30px;
+            padding: 0 1rem;
+            @include Alte-bold;
+            color: $white;
+            margin: 0;
+        }
+        .city-list {
+            margin: 0;
+            padding: 0.8rem 0 0.8rem 1.6rem;
+            li {
+                list-style: none;
+                font-size: 14px;
+                @include Alte-regular;
+                a {
+                    color: $dark-gray;
+                    text-decoration: none;
+                    @include transition-basic;
+                    line-height: 32px;
+                    &:hover {
+                        color: $orange;
+                    }
+                }
+            }
+        }
+    }
+    .close {
+        margin-top: -26px;
+    }
+    .input-group {
+        margin-bottom: 2rem;
+        &.fr-search-cities {
+            display: flex;
+            width: 100%;
+            position: relative;
+            input {
+                width: 100%;
+                height: 60px;
+                border-radius: 30px;
+                border: 1px solid $orange;
+                position: relative;
+            }
+            .input-group-btn {
+                position: absolute;
+                right: 0;
+                top: 1px;
+                button {
+                    width: 58px;
+                    height: 58px;
+                    display: block;
+                    border-radius: 30px;
+                    background: $orange;
+                    margin: 0;
+                    z-index: 3;
+                    border: none;
+                    cursor: pointer;
+                    position: relative;
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        width: 30px;
+                        height: 30px;
+                        top: 15px;
+                        left: 15px;
+                        background: url(../images/sprite.png);
+                        background-repeat: no-repeat;
+                        background-size: 126px;
+                        background-position: -64px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.model-location-wrap {
+    display: flex;
+    flex-grow: 1;
+    .location-img {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        background: url('../images/sprite.png') $orange;
+        background-repeat: no-repeat;
+        background-size: 126px;
+        background-position: -92px;
+    }
+    .location-details {
+        h3 {
+            @include Alte-regular;
+            font-size: 20px;
+            line-height: 40px;
+            padding-left: 1rem;
+            margin: 0;
+        }
+    }
+}
 
 @import 'media';
