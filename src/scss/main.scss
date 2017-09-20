@@ -437,6 +437,11 @@ body {
     }
 }
 
+=======
+@import 'megamenu';
+@import 'sliders';
+@import 'footer';
+
 #changeRegion {
     .city-title-letter {
         .city-title-header {
@@ -541,6 +546,7 @@ body {
     }
 }
 
+<<<<<<< HEAD
 .mobile-btns-wrapp {
     padding: 2rem 0;
     max-width: $main-width;
@@ -599,4 +605,6 @@ body {
 @import 'megamenu';
 @import 'sliders';
 @import 'footer';
+=======
+>>>>>>> d9244036c34f73a9d1c0ea7966da018814da704b
 @import 'media';

@@ -98,9 +98,6 @@
         //min-width: 100vh;
         left: -20vh;
     }
-    .fr-header-nav {
-        background: $white !important;
-    }
     .col-wrapper {
         button {
             &.btn-nearby {
@@ -224,7 +221,9 @@
                         height: 30px;
                         position: absolute;
                         display: inline-block;
-                        background: $black;
+                        background: url(../images/tick.png);
+                        background-size: contain;
+                        background-repeat: no-repeat;
                         left: 0px;
                         top: 15px;
                     }
@@ -276,6 +275,9 @@
         &.desktop {
             display: none;
         }
+        &.mobile{
+            display: block !important;
+        }
     }
     .footer-link-header {
         padding: 0 2rem 1rem !important;
@@ -315,8 +317,5 @@
                 }
             }
         }
-    }
-    .mobile-btns-wrapp {
-        display: block;
     }
 }

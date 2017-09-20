@@ -63,6 +63,7 @@
                                 background-size: 76px;
                                 background-position: -46px -3px;
                                 z-index: 9999;
+                                opacity: 1;
                             }
                         }
                         .item-price {
@@ -120,6 +121,7 @@
                                 background-size: 76px;
                                 background-position: -46px -3px;
                                 z-index: 9999;
+                                opacity: 1;
                             }
                         }
                         .item-price {
@@ -174,6 +176,7 @@
                         .item-image {
                             .overlay-icon {
                                 display: block;
+                                opacity: 1;
                                 background: url('../images/item-overlays.png') $purple;
                                 background-repeat: no-repeat;
                                 background-size: 76px;
@@ -183,6 +186,7 @@
                         }
                         .item-price {
                             color: $purple;
+                            
                         }
                         .item-location {
                             &:before {
@@ -257,6 +261,7 @@
                             background-size: 96px;
                             top: 1rem;
                             left: 1rem;
+                            z-index: 3;
                         }
                     }
                 }
@@ -265,6 +270,7 @@
                         .item-image {
                             .overlay-icon {
                                 display: block;
+                                opacity: 1;
                                 background: url('../images/item-overlays.png') $red;
                                 background-repeat: no-repeat;
                                 background-size: 76px;
@@ -290,6 +296,15 @@
                     background-size: cover;
                     background-position: 50% 50%;
                     position: relative;
+                    &:after{
+                        width: 100%;
+                        height: 100%;
+                        content: '';
+                        position: absolute;
+                        background: $black;
+                        @include transition-basic;
+                        opacity: 0.5;
+                    }
                     .featured {
                         display: block;
                         width: 100%;
@@ -298,8 +313,10 @@
                         position: absolute;
                         bottom: 0;
                         left: 0;
+                        @include transition-basic;
                         padding: 1rem 0;
-                        display: none;
+                        opacity: 0;
+                        z-index: 3;
                     }
                     .overlay-icon {
                         display: block;
@@ -311,7 +328,10 @@
                         background-position: -46px -3px;
                         position: absolute;
                         right: 1rem;
-                        display: none;
+                        //display: none;
+                        opacity: 0;
+                        @include transition-basic;
+                        z-index: 3;
                     }
                 }
                 .item-details {
@@ -338,6 +358,7 @@
                         font-size: 1.1rem;
                         text-transform: uppercase;
                         margin-bottom: 20px;
+                        @include transition-basic;
                     }
                     .item-location {
                         @include Alte-regular;
@@ -346,6 +367,7 @@
                         line-height: 36px;
                         padding-left: 40px;
                         margin-bottom: 20px;
+                        @include transition-basic;
                         &:before {
                             content: '';
                             width: 36px;
@@ -358,6 +380,7 @@
                             background-size: 47px;
                             position: absolute;
                             left: 0;
+                            @include transition-basic;
                         }
                     }
                     .item-date {
@@ -367,6 +390,7 @@
                         line-height: 36px;
                         padding-left: 40px;
                         margin-bottom: 20px;
+                        @include transition-basic;
                         &:before {
                             content: '';
                             width: 36px;
@@ -379,6 +403,7 @@
                             background-size: 42px;
                             position: absolute;
                             left: 0;
+                            @include transition-basic;
                         }
                     }
                     .item-tag {
@@ -395,6 +420,7 @@
                     color: $black;
                     // background: $yellow;
                     margin: 0;
+                    @include transition-basic;
                     padding: 1rem;
                     span {
                         @include hanken-light;
@@ -413,6 +439,20 @@
                             position: absolute;
                             top: 8px;
                             left: -10%;
+                        }
+                    }
+                }
+            }
+            &:hover{
+                .item-wrapp {
+                    .item-image {
+                        &:after{
+                            width: 100%;
+                            height: 100%;
+                            content: '';
+                            position: absolute;
+                            background: $black;
+                            opacity: 0;
                         }
                     }
                 }
