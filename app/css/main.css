@@ -1956,7 +1956,9 @@ body {
     height: 30px;
     position: absolute;
     display: inline-block;
-    background: #000000;
+    background: url(../images/tick.png);
+    background-size: contain;
+    background-repeat: no-repeat;
     left: 0px;
     top: 15px;
   }
@@ -2009,6 +2011,10 @@ body {
 
   .footer.desktop {
     display: none;
+  }
+
+  .footer.mobile {
+    display: block !important;
   }
 
   .footer-link-header {

@@ -1,1 +1,128 @@
 @import 'var';
+
+.fr-footer {
+    background: $medium-gray;
+    .footer {
+        max-width: $main-width;
+        margin: 5rem auto 0;
+        padding: 2rem 2rem 1rem 2rem;
+        &.mobile {
+            display: none;
+        }
+    }
+    .footer-line-1 {
+        padding-bottom: 36px;
+        margin-bottom: 36px;
+        border-bottom: 1px solid $white;
+        .col {
+            padding: 0;
+        }
+    }
+    .footer-line-2 {
+        padding-bottom: 36px;
+        border-bottom: 1px solid $white;
+        .col {
+            padding: 0;
+        }
+    }
+    .footer-links {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            list-style: none;
+            width: 33%;
+            a {
+                @include Alte-regular;
+                font-size: 0.9rem;
+                color: $white;
+                text-transform: capitalize;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .frugl-logo-and-tagline {
+        display: flex;
+        align-items: flex-start;
+        img {
+            width: 120px;
+            margin-right: 50px;
+        }
+        .frugl-tagline {
+            @include hanken-light;
+            font-size: 1.5rem;
+            line-height: 2.2rem;
+            color: $white;
+        }
+    }
+    .frugl-address {
+        @include Alte-regular;
+        font-size: 0.9rem;
+        color: $white;
+        line-height: 2;
+        span {
+            display: block;
+        }
+    }
+    .social-links {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        li {
+            list-style: none;
+            a {
+                color: $white;
+                @include Alte-regular;
+                font-size: 0.9rem;
+                &:hover {
+                    text-decoration: none;
+                }
+                span.solcial-link-name {
+                    display: none;
+                }
+                .social-link {
+                    display: block;
+                    width: 70px;
+                    height: 70px;
+                    margin: 0 1rem 0 0;
+                    &.tw {
+                        background: url('../images/socialicons.png');
+                        background-repeat: no-repeat;
+                        background-position: 0 0;
+                    }
+                    &.ig {
+                        background: url('../images/socialicons.png');
+                        background-repeat: no-repeat;
+                        background-position: -100px 0;
+                    }
+                    &.fb {
+                        background: url('../images/socialicons.png');
+                        background-repeat: no-repeat;
+                        background-position: -200px 0;
+                    }
+                    &.sc {
+                        background: url('../images/socialicons.png');
+                        background-repeat: no-repeat;
+                        background-position: -300px 0;
+                    }
+                }
+            }
+        }
+    }
+    .copyright {
+        padding-top: 1rem;
+        h6 {
+            @include Alte-regular;
+            font-size: 14px;
+            color: $white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            width: 100%;
+        }
+    }
+}

@@ -221,7 +221,9 @@
                         height: 30px;
                         position: absolute;
                         display: inline-block;
-                        background: $black;
+                        background: url(../images/tick.png);
+                        background-size: contain;
+                        background-repeat: no-repeat;
                         left: 0px;
                         top: 15px;
                     }
@@ -272,6 +274,9 @@
     .footer {
         &.desktop {
             display: none;
+        }
+        &.mobile{
+            display: block !important;
         }
     }
     .footer-link-header {
