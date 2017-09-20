@@ -9,6 +9,11 @@
     // .frugl-header {
     //     padding: 0;
     // }
+    .fr-login-tabs {
+        select {
+            margin-bottom: 1rem;
+        }
+    }
     .burger {
         &.sidenav-toggle {
             display: block;
@@ -275,7 +280,7 @@
         &.desktop {
             display: none;
         }
-        &.mobile{
+        &.mobile {
             display: block !important;
         }
     }

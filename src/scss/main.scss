@@ -473,7 +473,7 @@ body {
         }
     }
     .close {
-        margin-top: -26px;
+        //margin-top: -26px;
     }
     .input-group {
         margin-bottom: 2rem;
@@ -596,6 +596,76 @@ body {
                 }
             }
         }
+    }
+}
+
+.fr-login-tabs {
+    position: relative;
+    .fr-modal-close {
+        position: absolute;
+        right: 50%;
+        margin-right: -15px;
+        top: -15px;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $white;
+        border-radius: 15px;
+        opacity: 1;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+        span {
+            line-height: 12px;
+            position: absolute;
+            top: 6px;
+            left: 8px;
+        }
+    }
+    nav {
+        border: none !important;
+        a {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            text-transform: capitalize;
+            color: $dark-gray !important;
+            background-color: $background !important;
+            width: 50%;
+            line-height: 60px;
+            border: none !important;
+            &.active {
+                border: none;
+                background-color: $orange !important;
+                color: $white !important;
+            }
+        }
+    }
+    .tab-content {
+        padding: 1.5rem 1.5rem 0;
+    }
+    select {
+        display: flex;
+        width: 100%;
+        border-radius: 30px;
+        border: 1px solid $yellow;
+        background: url('../images/drop.png');
+        background-repeat: no-repeat;
+        background-size: 36px;
+        background-position: 100%;
+    }
+    .modal-title {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        text-transform: capitalize;
+        color: $white !important;
+        background-color: $orange !important;
+        width: 100%;
+        line-height: 60px;
+        border: none !important;
+        border-radius: 0.275rem 0.275rem 0 0;
+        margin-bottom: 1rem;
     }
 }
 

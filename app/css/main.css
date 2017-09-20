@@ -1670,10 +1670,6 @@ h1,
   color: #db5b46;
 }
 
-#changeRegion .close {
-  margin-top: -26px;
-}
-
 #changeRegion .input-group {
   margin-bottom: 2rem;
 }
@@ -1811,6 +1807,84 @@ h1,
 
 .mobile-btns-wrapp ul li a.btn-shopping:hover {
   background: #511948;
+}
+
+.fr-login-tabs {
+  position: relative;
+}
+
+.fr-login-tabs .fr-modal-close {
+  position: absolute;
+  right: 50%;
+  margin-right: -15px;
+  top: -15px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 15px;
+  opacity: 1;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.fr-login-tabs .fr-modal-close span {
+  line-height: 12px;
+  position: absolute;
+  top: 6px;
+  left: 8px;
+}
+
+.fr-login-tabs nav {
+  border: none !important;
+}
+
+.fr-login-tabs nav a {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-transform: capitalize;
+  color: #525252 !important;
+  background-color: #eaeced !important;
+  width: 50%;
+  line-height: 60px;
+  border: none !important;
+}
+
+.fr-login-tabs nav a.active {
+  border: none;
+  background-color: #db5b46 !important;
+  color: #ffffff !important;
+}
+
+.fr-login-tabs .tab-content {
+  padding: 1.5rem 1.5rem 0;
+}
+
+.fr-login-tabs select {
+  display: flex;
+  width: 100%;
+  border-radius: 30px;
+  border: 1px solid #fec153;
+  background: url("../images/drop.png");
+  background-repeat: no-repeat;
+  background-size: 36px;
+  background-position: 100%;
+}
+
+.fr-login-tabs .modal-title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ffffff !important;
+  background-color: #db5b46 !important;
+  width: 100%;
+  line-height: 60px;
+  border: none !important;
+  border-radius: 0.275rem 0.275rem 0 0;
+  margin-bottom: 1rem;
 }
 
 h1,
@@ -2521,6 +2595,10 @@ h1,
 }
 
 @media screen and (max-width: 991px) {
+  .fr-login-tabs select {
+    margin-bottom: 1rem;
+  }
+
   .burger.sidenav-toggle {
     display: block;
   }
