@@ -1713,71 +1713,6 @@ body {
   margin: 0;
 }
 
-.mobile-btns-wrapp {
-  padding: 2rem 0;
-  max-width: 1140px;
-  margin: 0 auto;
-  display: none;
-}
-
-.mobile-btns-wrapp ul {
-  padding: 0;
-  margin: 0;
-  display: flex;
-}
-
-.mobile-btns-wrapp ul li {
-  list-style: none;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.mobile-btns-wrapp ul li a {
-  background: transparent;
-  font-family: 'Hanken';
-  font-weight: 300;
-  color: #000000;
-  width: 200px;
-  border: 2px solid #ffffff;
-  z-index: 2;
-  padding: 0.3rem 1rem;
-  text-align: center;
-  width: 90%;
-  margin: 0 5%;
-  border-radius: 2rem;
-  cursor: pointer;
-  outline: none;
-  text-decoration: none;
-}
-
-.mobile-btns-wrapp ul li a.btn-nearby {
-  border-color: #fec153;
-  transition: all 0.3s ease-in-out;
-}
-
-.mobile-btns-wrapp ul li a.btn-nearby:hover {
-  background: #fec153;
-}
-
-.mobile-btns-wrapp ul li a.btn-travel {
-  border-color: #47b39b;
-  transition: all 0.3s ease-in-out;
-}
-
-.mobile-btns-wrapp ul li a.btn-travel:hover {
-  background: #47b39b;
-}
-
-.mobile-btns-wrapp ul li a.btn-shopping {
-  border-color: #511948;
-  transition: all 0.3s ease-in-out;
-}
-
-.mobile-btns-wrapp ul li a.btn-shopping:hover {
-  background: #511948;
-}
-
 @media screen and (min-width: 991px) {
   li.nav-item.dropdown:hover .dropdown-menu {
     display: block;
@@ -1885,10 +1820,6 @@ body {
     box-shadow: none;
     -webkit-box-shadow: none;
     left: -20vh;
-  }
-
-  .fr-header-nav {
-    background: #ffffff !important;
   }
 
   .col-wrapper button.btn-nearby {
@@ -2127,9 +2058,5 @@ body {
 
   .social-links li a .social-link {
     display: none !important;
-  }
-
-  .mobile-btns-wrapp {
-    display: block;
   }
 }
