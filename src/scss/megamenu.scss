@@ -78,12 +78,13 @@ h1,
 .mega-dropdown-menu>li ul>li>a:hover,
 .mega-dropdown-menu>li ul>li>a:focus {
     text-decoration: none;
-    color: #444;
-    background-color: #f5f5f5;
+    color: $dark-gray;
+    background-color: $white;
+    border-radius: 20px;
 }
 
 .mega-dropdown-menu .dropdown-header {
-    color: #428bca;
+    color: $black;
     font-size: 18px;
     font-weight: bold;
 }
@@ -96,10 +97,6 @@ h1,
     margin-bottom: 3px;
 }
 
-<<<<<<< HEAD
 .mega-dropdown .dropdown-menu.show {
-=======
-.mega-dropdown .dropdown-menu.show{
->>>>>>> d9244036c34f73a9d1c0ea7966da018814da704b
     display: flex;
 }

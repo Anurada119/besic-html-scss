@@ -61,8 +61,6 @@ function dropDown() {
         $('.dropdown-menu, .mega-dropdown.dropdown').addClass('show');
         $('.dropdown-toggle').on('click', function() {
             $(this).siblings('.dropdown-menu').slideToggle();
-            //$(this).parent('.dropdown').removeClass('show');
-            //$(this).attr('aria-expanded', 'false');
         })
     } else {
         $('.dropdown-menu, .mega-dropdown.dropdown').removeClass('show');
