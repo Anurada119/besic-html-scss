@@ -3,7 +3,7 @@ $(document).ready(function() {
     sidenav();
     dropDown();
 
-    $('.items').slick({
+    $('.js-items').slick({
         dots: true,
         infinite: false,
         speed: 300,

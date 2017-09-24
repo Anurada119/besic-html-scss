@@ -669,6 +669,28 @@ body {
     }
 }
 
+.category-body {
+    margin: 0 auto;
+    >.row {
+        padding: 0 30px;
+    }
+    .row>.col {
+        padding: 0 !important;
+    }
+    .item-section-header {
+        border-top: 1px solid $dark-gray;
+        padding-top: 30px;
+        margin-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    .items {
+        margin-bottom: 30px;
+    }
+}
+
 @import 'megamenu';
 @import 'sliders';
 @import 'footer';
