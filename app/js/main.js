@@ -2,6 +2,7 @@ $(document).ready(function() {
 
     sidenav();
     dropDown();
+    categoryMobile();
 
     $('.js-items').slick({
         dots: true,
@@ -81,4 +82,17 @@ function sidenav() {
     $('.close-sidnav').on('click', function() {
         $('#navbarSupportedContent').removeClass('sidenav-open');
     });
+}
+
+function categoryMobile() {
+    $('.category-switch').on('click', function() {
+        $('.category-sidebad-mobile').toggle();
+    })
+    $('.filters-drop').on('click', function() {
+        $('.filters-menu').slideToggle()
+    });
+    $('.name-filter').on('click', function() {
+        $('.filters-menu').hide();
+    })
+
 }

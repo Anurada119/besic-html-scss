@@ -324,3 +324,21 @@
         }
     }
 }
+
+@media screen and (max-width:767px) {
+    .category-sidebad-hide {
+        display: none;
+    }
+    .category-switch {
+        display: block !important;
+    }
+    .item-section-header.mobile {
+        display: block;
+    }
+    .item-section-header.desktop {
+        display: none;
+    }
+    .category-sidebad-mobile {
+        display: block;
+    }
+}
