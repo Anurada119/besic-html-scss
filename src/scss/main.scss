@@ -358,40 +358,54 @@ body {
                 }
             }
         }
-        li>a {
+        li{
+            cursor: pointer;
+            padding: 0 1rem;
+            margin-bottom: 0.5rem;
+            &.fr-nearby {
+                > a{
+                    border: 2px solid $yellow;
+                    border-radius: 40px;
+                    padding: 0.4rem 2rem 0.2rem !important;
+                    @include transition-basic;
+                    &:hover {
+                        background: $yellow;
+                        text-decoration: none;
+                    }
+                }
+                
+            }
+            &.fr-travel {
+                >a{
+                    border: 2px solid $green;
+                    border-radius: 40px;
+                    padding: 0.4rem 2rem 0.2rem !important;
+                    @include transition-basic;
+                    &:hover {
+                        background: $green;
+                        text-decoration: none;
+                    }
+                }
+                
+            }
+            &.fr-shopping {
+                >a{
+                    border: 2px solid $purple;
+                    border-radius: 40px;
+                    padding: 0.4rem 2rem 0.2rem !important;
+                    @include transition-basic;
+                    &:hover {
+                        background: $purple;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        >a {
             margin: 0 1rem;
             display: inline-block;
             color: $dark-gray;
-            &.fr-nearby {
-                border: 2px solid $yellow;
-                border-radius: 40px;
-                padding: 0.4rem 2rem 0.2rem !important;
-                @include transition-basic;
-                &:hover {
-                    background: $yellow;
-                    text-decoration: none;
-                }
-            }
-            &.fr-travel {
-                border: 2px solid $green;
-                border-radius: 40px;
-                padding: 0.4rem 2rem 0.2rem !important;
-                @include transition-basic;
-                &:hover {
-                    background: $green;
-                    text-decoration: none;
-                }
-            }
-            &.fr-shopping {
-                border: 2px solid $purple;
-                border-radius: 40px;
-                padding: 0.4rem 2rem 0.2rem !important;
-                @include transition-basic;
-                &:hover {
-                    background: $purple;
-                    text-decoration: none;
-                }
-            }
+            display: block;
         }
     }
 }

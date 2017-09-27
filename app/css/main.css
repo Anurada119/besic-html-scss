@@ -844,46 +844,53 @@ body {
   display: none;
 }
 
-.fr-navbar ul li > a {
-  margin: 0 1rem;
-  display: inline-block;
-  color: #525252;
+.fr-navbar ul li {
+  cursor: pointer;
+  padding: 0 1rem;
+  margin-bottom: 0.5rem;
 }
 
-.fr-navbar ul li > a.fr-nearby {
+.fr-navbar ul li.fr-nearby > a {
   border: 2px solid #fec153;
   border-radius: 40px;
   padding: 0.4rem 2rem 0.2rem !important;
   transition: all 0.3s ease-in-out;
 }
 
-.fr-navbar ul li > a.fr-nearby:hover {
+.fr-navbar ul li.fr-nearby > a:hover {
   background: #fec153;
   text-decoration: none;
 }
 
-.fr-navbar ul li > a.fr-travel {
+.fr-navbar ul li.fr-travel > a {
   border: 2px solid #47b39b;
   border-radius: 40px;
   padding: 0.4rem 2rem 0.2rem !important;
   transition: all 0.3s ease-in-out;
 }
 
-.fr-navbar ul li > a.fr-travel:hover {
+.fr-navbar ul li.fr-travel > a:hover {
   background: #47b39b;
   text-decoration: none;
 }
 
-.fr-navbar ul li > a.fr-shopping {
+.fr-navbar ul li.fr-shopping > a {
   border: 2px solid #511948;
   border-radius: 40px;
   padding: 0.4rem 2rem 0.2rem !important;
   transition: all 0.3s ease-in-out;
 }
 
-.fr-navbar ul li > a.fr-shopping:hover {
+.fr-navbar ul li.fr-shopping > a:hover {
   background: #511948;
   text-decoration: none;
+}
+
+.fr-navbar ul > a {
+  margin: 0 1rem;
+  display: inline-block;
+  color: #525252;
+  display: block;
 }
 
 .fr-action-bar-wrap {
