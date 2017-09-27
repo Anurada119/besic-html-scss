@@ -1081,7 +1081,7 @@ h1,
   justify-content: flex-end;
 }
 
-.item-section-header div button {
+.item-section-header div a {
   background: transparent;
   border: 2px solid;
   border-radius: 30px;
@@ -1093,27 +1093,27 @@ h1,
   transition: all 0.3s ease-in-out;
 }
 
-.item-section-header div button.nearby-btn {
+.item-section-header div a.nearby-btn {
   border-color: #fec153;
 }
 
-.item-section-header div button.nearby-btn:hover {
+.item-section-header div a.nearby-btn:hover {
   background: #fec153;
 }
 
-.item-section-header div button.travel-btn {
+.item-section-header div a.travel-btn {
   border-color: #47b39b;
 }
 
-.item-section-header div button.travel-btn:hover {
+.item-section-header div a.travel-btn:hover {
   background: #47b39b;
 }
 
-.item-section-header div button.shopping-btn {
+.item-section-header div a.shopping-btn {
   border-color: #511948;
 }
 
-.item-section-header div button.shopping-btn:hover {
+.item-section-header div a.shopping-btn:hover {
   background: #511948;
 }
 
@@ -2298,7 +2298,7 @@ h1,
   justify-content: flex-end;
 }
 
-.item-section-header div button {
+.item-section-header div a {
   background: transparent;
   border: 2px solid;
   border-radius: 30px;
@@ -2310,27 +2310,27 @@ h1,
   transition: all 0.3s ease-in-out;
 }
 
-.item-section-header div button.nearby-btn {
+.item-section-header div a.nearby-btn {
   border-color: #fec153;
 }
 
-.item-section-header div button.nearby-btn:hover {
+.item-section-header div a.nearby-btn:hover {
   background: #fec153;
 }
 
-.item-section-header div button.travel-btn {
+.item-section-header div a.travel-btn {
   border-color: #47b39b;
 }
 
-.item-section-header div button.travel-btn:hover {
+.item-section-header div a.travel-btn:hover {
   background: #47b39b;
 }
 
-.item-section-header div button.shopping-btn {
+.item-section-header div a.shopping-btn {
   border-color: #511948;
 }
 
-.item-section-header div button.shopping-btn:hover {
+.item-section-header div a.shopping-btn:hover {
   background: #511948;
 }
 
