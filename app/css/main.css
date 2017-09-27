@@ -530,9 +530,11 @@ body {
   color: #ffffff;
 }
 
-.frugl-header .col-wrapper button {
+.frugl-header .col-wrapper a {
   background: transparent;
   color: #ffffff;
+  display: block;
+  text-align: center;
   width: 200px;
   border: 2px solid #ffffff;
   z-index: 2;
@@ -542,30 +544,30 @@ body {
   outline: none;
 }
 
-.frugl-header .col-wrapper button.btn-nearby {
+.frugl-header .col-wrapper a.btn-nearby {
   border-color: #fec153;
   transition: all 0.3s ease-in-out;
 }
 
-.frugl-header .col-wrapper button.btn-nearby:hover {
+.frugl-header .col-wrapper a.btn-nearby:hover {
   background: #fec153;
 }
 
-.frugl-header .col-wrapper button.btn-travel {
+.frugl-header .col-wrapper a.btn-travel {
   border-color: #47b39b;
   transition: all 0.3s ease-in-out;
 }
 
-.frugl-header .col-wrapper button.btn-travel:hover {
+.frugl-header .col-wrapper a.btn-travel:hover {
   background: #47b39b;
 }
 
-.frugl-header .col-wrapper button.btn-shopping {
+.frugl-header .col-wrapper a.btn-shopping {
   border-color: #511948;
   transition: all 0.3s ease-in-out;
 }
 
-.frugl-header .col-wrapper button.btn-shopping:hover {
+.frugl-header .col-wrapper a.btn-shopping:hover {
   background: #511948;
 }
 
@@ -2155,6 +2157,11 @@ h1,
 
 .item-section-header.desktop {
   display: block;
+}
+
+.item-section-header.home-page {
+  padding-top: 60px;
+  margin-bottom: 2rem;
 }
 
 h1,

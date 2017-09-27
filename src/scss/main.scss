@@ -74,9 +74,11 @@ body {
             z-index: 2;
             color: $white;
         }
-        button {
+        a {
             background: transparent;
             color: $white;
+            display: block;
+            text-align: center;
             width: 200px;
             border: 2px solid $white;
             z-index: 2;
@@ -895,6 +897,11 @@ body {
 
 .item-section-header.desktop {
     display: block;
+}
+
+.item-section-header.home-page{
+    padding-top: 60px;
+    margin-bottom: 2rem;
 }
 
 @import 'megamenu';
