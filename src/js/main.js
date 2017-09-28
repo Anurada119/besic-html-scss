@@ -3,20 +3,9 @@ $(document).ready(function() {
     sidenav();
     dropDown();
     categoryMobile();
+    sliders();
 
-    $( function() {
-        $("#slider-range" ).slider({
-          range: true,
-          min: 0,
-          max: 500,
-          values: [ 0, 500 ],
-          slide: function( event, ui ) {
-            $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
-          }
-        });
-        $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-          " - $" + $( "#slider-range" ).slider( "values", 1 ) );
-    } );
+
 
     $('.js-items').slick({
         dots: true,
@@ -73,7 +62,7 @@ $(window).resize(function() {
 function dropDown() {
     var wWidth = $(window).width();
     if (wWidth < 991) {
-        $('.dropdown-menu, .mega-dropdown.dropdown').addClass('show');
+        $('.dropdown-menu-js, .mega-dropdown.dropdown').addClass('show');
         $('.dropdown-toggle').on('click', function() {
             $(this).siblings('.dropdown-menu').slideToggle();
         })
@@ -105,7 +94,48 @@ function categoryMobile() {
     $('.filters-drop').on('click', function() {
         $('.filters-menu').slideToggle()
     });
-    $('.name-filter').on('click', function () {
+    $('.name-filter').on('click', function() {
         $('.filters-menu').hide();
+    });
+}
+
+function sliders() {
+    $(function() {
+        $("#slider-range").slider({
+            range: true,
+            min: 0,
+            max: 500,
+            values: [0, 500],
+            slide: function(event, ui) {
+                $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+            }
+        });
+        $("#amount").val("$" + $("#slider-range").slider("values", 0) +
+            " - $" + $("#slider-range").slider("values", 1));
+    });
+    $(function() {
+        $("#slider-range2").slider({
+            range: true,
+            min: 0,
+            max: 500,
+            values: [0, 500],
+            slide: function(event, ui) {
+                $("#amount2").val("$" + ui.values[0] + " - $" + ui.values[1]);
+            }
+        });
+        $("#amount2").val("$" + $("#slider-range2").slider("values", 0) +
+            " - $" + $("#slider-range2").slider("values", 1));
+    });
+    $(function() {
+        $("#slider-range3").slider({
+            range: true,
+            min: 0,
+            max: 5,
+            values: [0, 5],
+            slide: function(event, ui) {
+                $("#amount3").val(ui.values[0] + ui.values[1]);
+            }
+        });
+        $("#amount3").val($("#slider-range3").slider("values", 0) + $("#slider-range3").slider("values", 1));
     });
 }
