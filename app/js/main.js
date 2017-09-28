@@ -105,8 +105,7 @@ function categoryMobile() {
     $('.filters-drop').on('click', function() {
         $('.filters-menu').slideToggle()
     });
-    $('.name-filter').on('click', function() {
+    $('.name-filter').on('click', function () {
         $('.filters-menu').hide();
-    })
-
+    });
 }

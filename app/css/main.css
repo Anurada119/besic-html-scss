@@ -1832,6 +1832,13 @@ h1,
   background: #511948;
 }
 
+.reset-cities a {
+  border: 1px solid #525252;
+  padding: 0.5rem 1rem 0.3rem;
+  color: #525252;
+  border-radius: 30px;
+}
+
 .fr-login-tabs {
   position: relative;
 }
