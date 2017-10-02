@@ -86,6 +86,7 @@ body {
             border-radius: 2rem;
             cursor: pointer;
             outline: none;
+            @include hanken-book;
             &.btn-nearby {
                 border-color: $yellow;
                 @include transition-basic;
@@ -98,6 +99,7 @@ body {
                 @include transition-basic;
                 &:hover {
                     background: $green;
+                    color: $white;
                 }
             }
             &.btn-shopping {
@@ -105,6 +107,7 @@ body {
                 @include transition-basic;
                 &:hover {
                     background: $purple;
+                    color: $white;
                 }
             }
         }
@@ -353,6 +356,7 @@ body {
         li {
             a {
                 @include hanken-light;
+                color: $dark-gray;
                 &:after {
                     display: none;
                 }
@@ -383,6 +387,7 @@ body {
                     &:hover {
                         background: $green;
                         text-decoration: none;
+                        color: $white;
                     }
                 }
             }
@@ -395,6 +400,7 @@ body {
                     &:hover {
                         background: $purple;
                         text-decoration: none;
+                        color: $white;
                     }
                 }
             }

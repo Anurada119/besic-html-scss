@@ -28,6 +28,7 @@
             cursor: pointer;
             outline: none;
             @include transition-basic;
+            color: $dark-gray !important;
             &.nearby-btn {
                 border-color: $yellow;
                 &:hover {
@@ -38,12 +39,14 @@
                 border-color: $green;
                 &:hover {
                     background: $green;
+                    color: $white !important;
                 }
             }
             &.shopping-btn {
                 border-color: $purple;
                 &:hover {
                     background: $purple;
+                    color: $white !important;
                 }
             }
         }
