@@ -1002,6 +1002,37 @@ html .ui-button.ui-state-disabled:active {
     margin-bottom: 2rem;
 }
 
+//events
+.fr-evens-body {
+    width: $main-width;
+    margin: 0 auto;
+    .big-btns {
+        text-align: center;
+        width: 100%;
+        @include Alte-regular;
+        font-size: 24px;
+        background: $orange;
+        color: $white;
+        margin: 1rem;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .left-side {
+            width: 100%;
+            height: 100px;
+            svg {
+                width: 100px;
+                style {
+                    .st0 {
+                        stroke: $dark-gray;
+                    }
+                }
+            }
+        }
+        &.left {}
+    }
+}
+
 @import 'megamenu';
 @import 'sliders';
 @import 'footer';

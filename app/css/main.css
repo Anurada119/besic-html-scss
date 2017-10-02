@@ -1167,10 +1167,11 @@ h1,
 
 .items.yellow-items .item.featured .item-wrapp .item-price {
   background: #fec153;
+  color: #525252;
 }
 
 .items.yellow-items .item.featured:hover .item-price {
-  color: #000000;
+  color: #525252;
 }
 
 .items.green-items .item {
@@ -1218,7 +1219,7 @@ h1,
 }
 
 .items.green-items .item.featured:hover .item-price {
-  color: #47b39b;
+  color: #ffffff;
 }
 
 .items.purple-items .item {
@@ -2258,6 +2259,38 @@ html .ui-button.ui-state-disabled:active {
   margin-bottom: 2rem;
 }
 
+.fr-evens-body {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.fr-evens-body .big-btns {
+  text-align: center;
+  width: 100%;
+  font-family: 'Alte Haas Grotesk';
+  font-weight: normal;
+  font-size: 24px;
+  background: #db5b46;
+  color: #ffffff;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.fr-evens-body .big-btns .left-side {
+  width: 100%;
+  height: 100px;
+}
+
+.fr-evens-body .big-btns .left-side svg {
+  width: 100px;
+}
+
+.fr-evens-body .big-btns .left-side svg style .st0 {
+  stroke: #525252;
+}
+
 h1,
 .h1 {
   font-size: 36px;
@@ -2464,10 +2497,11 @@ h1,
 
 .items.yellow-items .item.featured .item-wrapp .item-price {
   background: #fec153;
+  color: #525252;
 }
 
 .items.yellow-items .item.featured:hover .item-price {
-  color: #000000;
+  color: #525252;
 }
 
 .items.green-items .item {
@@ -2515,7 +2549,7 @@ h1,
 }
 
 .items.green-items .item.featured:hover .item-price {
-  color: #47b39b;
+  color: #ffffff;
 }
 
 .items.purple-items .item {

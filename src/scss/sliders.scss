@@ -103,11 +103,12 @@
                     }
                     .item-price {
                         background: $yellow;
+                        color: $dark-gray;
                     }
                 }
                 &:hover {
                     .item-price {
-                        color: $black;
+                        color: $dark-gray;
                     }
                 } //end of featured
             }
@@ -168,7 +169,7 @@
                 }
                 &:hover {
                     .item-price {
-                        color: $green;
+                        color: $white;
                     }
                 } //end of featured
             }
