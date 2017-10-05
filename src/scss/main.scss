@@ -1011,25 +1011,52 @@ html .ui-button.ui-state-disabled:active {
         width: 100%;
         @include Alte-regular;
         font-size: 24px;
-        background: $orange;
-        color: $white;
+        border: 1px solid $green;
+        color: $medium-gray;
         margin: 1rem;
+        padding: 1rem;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        border-radius: 1rem;
+        @include transition-basic;
         .left-side {
             width: 100%;
             height: 100px;
             svg {
                 width: 100px;
-                style {
-                    .st0 {
-                        stroke: $dark-gray;
+                g {
+                    path {
+                        stroke: $medium-gray;
+                        @include transition-basic;
+                    }
+                    line {
+                        stroke: $medium-gray;
+                        @include transition-basic;
                     }
                 }
             }
         }
-        &.left {}
+        &.right {
+            svg {
+                transform: scaleX(-1);
+                filter: FlipH;
+            }
+        }
+        &:hover {
+            background: $green;
+            color: $white;
+            svg {
+                g {
+                    path {
+                        stroke: $white;
+                    }
+                    line {
+                        stroke: $white;
+                    }
+                }
+            }
+        }
     }
 }
 

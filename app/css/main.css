@@ -1148,15 +1148,15 @@ h1,
 .items.yellow-items .item:hover .item-wrapp .item-location:before {
   background: url("../images/item-icons.png") #fec153;
   background-repeat: no-repeat;
-  background-position: 10px;
-  background-size: 47px;
+  background-position: 7px;
+  background-size: 33px;
 }
 
 .items.yellow-items .item:hover .item-wrapp .item-date:before {
   background: url("../images/item-icons.png") #fec153;
   background-repeat: no-repeat;
-  background-position: -15px;
-  background-size: 42px;
+  background-position: -11px;
+  background-size: 30px;
 }
 
 .items.yellow-items .item.featured .item-wrapp .item-image .featured {
@@ -1195,15 +1195,15 @@ h1,
 .items.green-items .item:hover .item-wrapp .item-location:before {
   background: url("../images/item-icons.png") #47b39b;
   background-repeat: no-repeat;
-  background-position: 10px;
-  background-size: 47px;
+  background-position: 7px;
+  background-size: 33px;
 }
 
 .items.green-items .item:hover .item-wrapp .item-date:before {
   background: url("../images/item-icons.png") #47b39b;
   background-repeat: no-repeat;
-  background-position: -15px;
-  background-size: 42px;
+  background-position: -11px;
+  background-size: 30px;
 }
 
 .items.green-items .item.featured .item-wrapp .item-image .featured {
@@ -1243,15 +1243,15 @@ h1,
 .items.purple-items .item:hover .item-wrapp .item-location:before {
   background: url("../images/item-icons-white.png") #511948;
   background-repeat: no-repeat;
-  background-position: 10px;
-  background-size: 47px;
+  background-position: 7px;
+  background-size: 33px;
 }
 
 .items.purple-items .item:hover .item-wrapp .item-date:before {
   background: url("../images/item-icons-white.png") #511948;
   background-repeat: no-repeat;
-  background-position: -15px;
-  background-size: 42px;
+  background-position: -11px;
+  background-size: 30px;
 }
 
 .items.purple-items .item.featured .item-wrapp .item-image .featured {
@@ -1322,7 +1322,7 @@ h1,
 
 .items .item .item-wrapp .item-image {
   width: 100%;
-  height: 262px;
+  height: 162px;
   display: flex;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1349,7 +1349,7 @@ h1,
   bottom: 0;
   left: 0;
   transition: all 0.3s ease-in-out;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   opacity: 0;
   z-index: 3;
 }
@@ -1373,7 +1373,7 @@ h1,
   width: 100%;
   display: block;
   padding: 1rem;
-  min-height: 310px;
+  min-height: 190px;
 }
 
 .items .item .item-wrapp .item-details h1,
@@ -1389,41 +1389,42 @@ h1,
 .items .item .item-wrapp .item-details .item-title {
   font-family: 'Hanken';
   font-weight: 300;
-  font-size: 1.5rem;
-  line-height: 1.5;
-  margin-bottom: 2.5rem;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  margin-bottom: 1rem;
+  color: #525252;
 }
 
 .items .item .item-wrapp .item-details .item-place {
   font-family: 'Alte Haas Grotesk';
   font-weight: normal;
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   transition: all 0.3s ease-in-out;
 }
 
 .items .item .item-wrapp .item-details .item-location {
   font-family: 'Alte Haas Grotesk';
   font-weight: normal;
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   position: relative;
-  line-height: 36px;
+  line-height: 24px;
   padding-left: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 6px;
   transition: all 0.3s ease-in-out;
 }
 
 .items .item .item-wrapp .item-details .item-location:before {
   content: '';
-  width: 36px;
-  height: 36px;
+  width: 24px;
+  height: 24px;
   border-radius: 18px;
   display: inline-block;
   background: url("../images/item-icons.png");
   background-repeat: no-repeat;
-  background-position: 10px;
-  background-size: 47px;
+  background-position: 7px;
+  background-size: 33px;
   position: absolute;
   left: 0;
   transition: all 0.3s ease-in-out;
@@ -1432,24 +1433,24 @@ h1,
 .items .item .item-wrapp .item-details .item-date {
   font-family: 'Alte Haas Grotesk';
   font-weight: normal;
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   position: relative;
-  line-height: 36px;
+  line-height: 24px;
   padding-left: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   transition: all 0.3s ease-in-out;
 }
 
 .items .item .item-wrapp .item-details .item-date:before {
   content: '';
-  width: 36px;
-  height: 36px;
+  width: 24px;
+  height: 24px;
   border-radius: 18px;
   display: inline-block;
   background: url("../images/item-icons.png");
   background-repeat: no-repeat;
-  background-position: -15px;
-  background-size: 42px;
+  background-position: -11px;
+  background-size: 30px;
   position: absolute;
   left: 0;
   transition: all 0.3s ease-in-out;
@@ -1458,7 +1459,7 @@ h1,
 .items .item .item-wrapp .item-details .item-tag {
   font-family: 'Alte Haas Grotesk';
   font-weight: normal;
-  font-size: 14px;
+  font-size: 10px;
   margin-bottom: 0px;
 }
 
@@ -2270,12 +2271,15 @@ html .ui-button.ui-state-disabled:active {
   font-family: 'Alte Haas Grotesk';
   font-weight: normal;
   font-size: 24px;
-  background: #db5b46;
-  color: #ffffff;
+  border: 1px solid #47b39b;
+  color: #7e8890;
   margin: 1rem;
+  padding: 1rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  border-radius: 1rem;
+  transition: all 0.3s ease-in-out;
 }
 
 .fr-evens-body .big-btns .left-side {
@@ -2287,8 +2291,32 @@ html .ui-button.ui-state-disabled:active {
   width: 100px;
 }
 
-.fr-evens-body .big-btns .left-side svg style .st0 {
-  stroke: #525252;
+.fr-evens-body .big-btns .left-side svg g path {
+  stroke: #7e8890;
+  transition: all 0.3s ease-in-out;
+}
+
+.fr-evens-body .big-btns .left-side svg g line {
+  stroke: #7e8890;
+  transition: all 0.3s ease-in-out;
+}
+
+.fr-evens-body .big-btns.right svg {
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+
+.fr-evens-body .big-btns:hover {
+  background: #47b39b;
+  color: #ffffff;
+}
+
+.fr-evens-body .big-btns:hover svg g path {
+  stroke: #ffffff;
+}
+
+.fr-evens-body .big-btns:hover svg g line {
+  stroke: #ffffff;
 }
 
 h1,
@@ -2478,15 +2506,15 @@ h1,
 .items.yellow-items .item:hover .item-wrapp .item-location:before {
   background: url("../images/item-icons.png") #fec153;
   background-repeat: no-repeat;
-  background-position: 10px;
-  background-size: 47px;
+  background-position: 7px;
+  background-size: 33px;
 }
 
 .items.yellow-items .item:hover .item-wrapp .item-date:before {
   background: url("../images/item-icons.png") #fec153;
   background-repeat: no-repeat;
-  background-position: -15px;
-  background-size: 42px;
+  background-position: -11px;
+  background-size: 30px;
 }
 
 .items.yellow-items .item.featured .item-wrapp .item-image .featured {
@@ -2525,15 +2553,15 @@ h1,
 .items.green-items .item:hover .item-wrapp .item-location:before {
   background: url("../images/item-icons.png") #47b39b;
   background-repeat: no-repeat;
-  background-position: 10px;
-  background-size: 47px;
+  background-position: 7px;
+  background-size: 33px;
 }
 
 .items.green-items .item:hover .item-wrapp .item-date:before {
   background: url("../images/item-icons.png") #47b39b;
   background-repeat: no-repeat;
-  background-position: -15px;
-  background-size: 42px;
+  background-position: -11px;
+  background-size: 30px;
 }
 
 .items.green-items .item.featured .item-wrapp .item-image .featured {
@@ -2573,15 +2601,15 @@ h1,
 .items.purple-items .item:hover .item-wrapp .item-location:before {
   background: url("../images/item-icons-white.png") #511948;
   background-repeat: no-repeat;
-  background-position: 10px;
-  background-size: 47px;
+  background-position: 7px;
+  background-size: 33px;
 }
 
 .items.purple-items .item:hover .item-wrapp .item-date:before {
   background: url("../images/item-icons-white.png") #511948;
   background-repeat: no-repeat;
-  background-position: -15px;
-  background-size: 42px;
+  background-position: -11px;
+  background-size: 30px;
 }
 
 .items.purple-items .item.featured .item-wrapp .item-image .featured {
@@ -2652,7 +2680,7 @@ h1,
 
 .items .item .item-wrapp .item-image {
   width: 100%;
-  height: 262px;
+  height: 162px;
   display: flex;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2679,7 +2707,7 @@ h1,
   bottom: 0;
   left: 0;
   transition: all 0.3s ease-in-out;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   opacity: 0;
   z-index: 3;
 }
@@ -2703,7 +2731,7 @@ h1,
   width: 100%;
   display: block;
   padding: 1rem;
-  min-height: 310px;
+  min-height: 190px;
 }
 
 .items .item .item-wrapp .item-details h1,
@@ -2719,41 +2747,42 @@ h1,
 .items .item .item-wrapp .item-details .item-title {
   font-family: 'Hanken';
   font-weight: 300;
-  font-size: 1.5rem;
-  line-height: 1.5;
-  margin-bottom: 2.5rem;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  margin-bottom: 1rem;
+  color: #525252;
 }
 
 .items .item .item-wrapp .item-details .item-place {
   font-family: 'Alte Haas Grotesk';
   font-weight: normal;
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   transition: all 0.3s ease-in-out;
 }
 
 .items .item .item-wrapp .item-details .item-location {
   font-family: 'Alte Haas Grotesk';
   font-weight: normal;
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   position: relative;
-  line-height: 36px;
+  line-height: 24px;
   padding-left: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 6px;
   transition: all 0.3s ease-in-out;
 }
 
 .items .item .item-wrapp .item-details .item-location:before {
   content: '';
-  width: 36px;
-  height: 36px;
+  width: 24px;
+  height: 24px;
   border-radius: 18px;
   display: inline-block;
   background: url("../images/item-icons.png");
   background-repeat: no-repeat;
-  background-position: 10px;
-  background-size: 47px;
+  background-position: 7px;
+  background-size: 33px;
   position: absolute;
   left: 0;
   transition: all 0.3s ease-in-out;
@@ -2762,24 +2791,24 @@ h1,
 .items .item .item-wrapp .item-details .item-date {
   font-family: 'Alte Haas Grotesk';
   font-weight: normal;
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   position: relative;
-  line-height: 36px;
+  line-height: 24px;
   padding-left: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   transition: all 0.3s ease-in-out;
 }
 
 .items .item .item-wrapp .item-details .item-date:before {
   content: '';
-  width: 36px;
-  height: 36px;
+  width: 24px;
+  height: 24px;
   border-radius: 18px;
   display: inline-block;
   background: url("../images/item-icons.png");
   background-repeat: no-repeat;
-  background-position: -15px;
-  background-size: 42px;
+  background-position: -11px;
+  background-size: 30px;
   position: absolute;
   left: 0;
   transition: all 0.3s ease-in-out;
@@ -2788,7 +2817,7 @@ h1,
 .items .item .item-wrapp .item-details .item-tag {
   font-family: 'Alte Haas Grotesk';
   font-weight: normal;
-  font-size: 14px;
+  font-size: 10px;
   margin-bottom: 0px;
 }
 
