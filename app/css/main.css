@@ -2319,6 +2319,63 @@ html .ui-button.ui-state-disabled:active {
   stroke: #ffffff;
 }
 
+.events-inner-page {
+  background: #fec153;
+  margin: -1rem 0 -60px 0;
+  height: 140px;
+}
+
+.events-inner-page .events-header {
+  width: 1140px;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.tabs-headings {
+  background: #fec153;
+  height: 60px;
+  border: none;
+}
+
+.tabs-headings.fr-evens-body {
+  margin: 0;
+  width: 100%;
+}
+
+.tabs-headings .nav-link.active {
+  background: transparent;
+  color: #ffffff;
+}
+
+.offer-toggle ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.offer-toggle ul li {
+  list-style: none;
+  line-height: 1rem;
+  font-family: 'Alte Haas Grotesk';
+  font-weight: normal;
+  font-size: 1.5rem;
+  border-radius: 4rem;
+  padding: 1rem;
+  margin: 1rem 1rem 1rem 0;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #511948;
+  color: #525252;
+}
+
+.offer-toggle ul li.show {
+  background: #511948;
+  color: #ffffff;
+}
+
 h1,
 .h1 {
   font-size: 36px;

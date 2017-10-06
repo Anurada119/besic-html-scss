@@ -1060,6 +1060,61 @@ html .ui-button.ui-state-disabled:active {
     }
 }
 
+.events-inner-page{
+    background: $yellow;
+    margin: -1rem 0 -60px 0;
+    height: 140px;
+    .events-header{
+        width: $main-width;
+        padding: 1rem;
+        margin: 0 auto;
+    }
+    
+}
+
+.no-padding{
+    padding: 0;
+}
+
+.tabs-headings{
+    background: $yellow;
+    height: 60px;
+    border: none;
+    &.fr-evens-body{
+        margin: 0;
+        width: 100%;
+
+    }
+    .nav-link.active{
+        background: transparent;
+        color: $white;
+    }
+}
+
+.offer-toggle{
+    ul{
+        display: flex;
+        padding: 0;
+        margin: 0;
+        li{
+            list-style: none;
+            line-height: 1rem;
+            @include Alte-regular;
+            font-size: 1.5rem;
+            border-radius: 4rem;
+            padding: 1rem;
+            margin: 1rem 1rem 1rem 0;
+            @include transition-basic;
+            border:1px solid $purple;
+            color: $dark-gray;
+            &.show{
+                background: $purple;
+                color: $white;
+            }
+        }
+    }
+}
+
 @import 'megamenu';
 @import 'sliders';
 @import 'footer';

@@ -4,7 +4,7 @@ $(document).ready(function() {
     dropDown();
     categoryMobile();
     sliders();
-
+    repeatTabs();
 
 
     $('.js-items').slick({
@@ -137,5 +137,22 @@ function sliders() {
             }
         });
         $("#amount3").val($("#slider-range3").slider("values", 0) + $("#slider-range3").slider("values", 1));
+    });
+}
+
+function repeatTabs() {
+    $('.tab-names li a').on('click', function (e) {
+        e.preventDefault();
+    })
+    $('.offer-occorence-content .content-tbs:last-child').hide();
+    $('.tab-names li').on('click', function () {
+        var tab_id = $(this).attr('data-tab-name');
+        console.log(tab_id);
+
+        $('.tab-names li').removeClass('show');
+        $('.offer-occorence-content .content-tbs').removeClass('show').hide();
+
+        $(this).addClass('show');
+        $('#' + tab_id).addClass('show').show();
     });
 }
