@@ -53,6 +53,14 @@ $(document).ready(function() {
         ]
     });
 
+
+
+    $('select').niceSelect();
+
+    $('.timepicker').wickedpicker();
+
+    $('.sandbox-container input').datepicker({});
+
 });
 
 $(window).resize(function() {
@@ -141,11 +149,11 @@ function sliders() {
 }
 
 function repeatTabs() {
-    $('.tab-names li a').on('click', function (e) {
+    $('.tab-names li a').on('click', function(e) {
         e.preventDefault();
     })
     $('.offer-occorence-content .content-tbs:last-child').hide();
-    $('.tab-names li').on('click', function () {
+    $('.tab-names li').on('click', function() {
         var tab_id = $(this).attr('data-tab-name');
         console.log(tab_id);
 
