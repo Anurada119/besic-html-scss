@@ -5,6 +5,7 @@ $(document).ready(function() {
     categoryMobile();
     sliders();
     repeatTabs();
+    settingsShow();
 
 
     $('.js-items').slick({
@@ -163,4 +164,11 @@ function repeatTabs() {
         $(this).addClass('show');
         $('#' + tab_id).addClass('show').show();
     });
+}
+
+function settingsShow() {
+    $('.settings-set').hide();
+    $('.settings').on('click', function () {
+        $(this).parents('.line-items').children('.settings-set').slideToggle();
+    })
 }
