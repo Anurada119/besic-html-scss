@@ -1084,6 +1084,15 @@ html .ui-button.ui-state-disabled:active {
         margin: 0;
         width: 100%;
     }
+    .nav-item {
+        &:last-child {
+            .nav-link {
+                &:after {
+                    display: none;
+                }
+            }
+        }
+    }
     .nav-link {
         @include Alte-regular;
         font-size: 1.4rem;
@@ -1125,6 +1134,18 @@ html .ui-button.ui-state-disabled:active {
 .tab-content {
     .event-info {
         padding: 2rem 0;
+        &.line-items {
+            padding: 2rem 0 0;
+        }
+        .info-boxes {
+            label {
+                display: block;
+                padding: 1rem;
+            }
+            &.image {
+                min-height: 400px;
+            }
+        }
         label {
             display: block;
             @include Alte-regular;
@@ -1195,6 +1216,7 @@ html .ui-button.ui-state-disabled:active {
         display: flex;
         width: 100%;
         height: 91%;
+        min-height: 350px;
         background: $green;
         border-radius: 1rem;
         margin-top: 2rem;
@@ -1239,6 +1261,92 @@ html .ui-button.ui-state-disabled:active {
     }
 }
 
+.extra-info {
+    padding-top: 2rem;
+    .col {
+        padding: 0.5rem;
+    }
+    .info-boxes {
+        border: 1px solid $green;
+        border-radius: 1rem;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        label {
+            text-align: center;
+            padding-top: 0 !important;
+            &.gray {
+                color: $dark-gray;
+            }
+        }
+        .options {
+            &.check {
+                display: flex;
+                .chackbox-name {
+                    color: $dark-gray !important;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+        .image-upload-info {
+            .fg-upload-steps {
+                li {
+                    list-style: none;
+                }
+            }
+        }
+    }
+}
+
+.fg-upload-steps li {
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    img {
+        width: 100%;
+    }
+}
+
+.fg-upload-steps li .step-is-done {
+    text-indent: -9999px;
+    width: 60px;
+    height: 30px;
+    position: relative;
+}
+
+.fg-upload-steps li .step-is-done:before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 1px solid #ff5924;
+    border-radius: 30px;
+}
+
+.fg-upload-steps li span {
+    flex: 1;
+    width: 100%;
+    padding-top: 4px;
+    color: #747474;
+    @include Alte-regular;
+    font-size: 1.3rem;
+}
+
+.fg-upload-steps li .step-is-done {
+    text-indent: -9999px;
+    width: 60px;
+    height: 30px;
+    position: relative;
+}
+
 .checkbox {
     display: flex;
     position: relative;
@@ -1276,6 +1384,50 @@ html .ui-button.ui-state-disabled:active {
         margin: 0;
         line-height: 40px;
         cursor: pointer;
+    }
+}
+
+.radio-group {
+    display: flex;
+    position: relative;
+    input[type=radio] {
+        opacity: 0;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-block-end: 20px;
+        &:checked+label {
+            @include transition-basic;
+            &:after {
+                content: '';
+                width: 14px;
+                height: 14px;
+                position: absolute;
+                border-radius: 14px;
+                background: $orange;
+                top: 2px;
+                left: 2px;
+            }
+        }
+    }
+    .radio-lbl {
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+        border: 1px solid $orange;
+        padding: 0 !important;
+        margin: 10px;
+        display: inline-block;
+        position: relative;
+        @include transition-basic;
+    }
+    .radio-name {
+        display: inline-block;
+        padding: 0 !important;
+        margin: 0;
+        line-height: 40px;
+        cursor: pointer;
+        color: $dark-gray !important;
     }
 }
 
@@ -1454,6 +1606,31 @@ input:checked+.slider:before {
     text-align: right;
     display: block;
     width: 100%;
+}
+
+.add-custom-ticket {
+    line-height: 34px;
+    height: 40px;
+    border: 2px solid $purple;
+    @include Alte-regular;
+    border-radius: 20px;
+    padding: 0 1rem;
+    margin: 2rem 0 0 1rem;
+    display: inline-block;
+    color: $dark-gray;
+    @include transition-basic;
+    &:hover {
+        background: $purple;
+        color: $white;
+    }
+    &.prev,
+    &.next {
+        border-color: $orange;
+        margin: 2rem 0 0 0.5rem;
+        &:hover {
+            background: $orange;
+        }
+    }
 }
 
 

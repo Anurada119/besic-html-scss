@@ -2510,6 +2510,10 @@ html .ui-button.ui-state-disabled.nice-select.open {
   width: 100%;
 }
 
+.tabs-headings .nav-item:last-child .nav-link:after {
+  display: none;
+}
+
 .tabs-headings .nav-link {
   font-family: 'Alte Haas Grotesk';
   font-weight: normal;
@@ -2554,6 +2558,19 @@ html .ui-button.ui-state-disabled.nice-select.open {
 
 .tab-content .event-info {
   padding: 2rem 0;
+}
+
+.tab-content .event-info.line-items {
+  padding: 2rem 0 0;
+}
+
+.tab-content .event-info .info-boxes label {
+  display: block;
+  padding: 1rem;
+}
+
+.tab-content .event-info .info-boxes.image {
+  min-height: 400px;
 }
 
 .tab-content .event-info label {
@@ -2636,6 +2653,7 @@ html .ui-button.ui-state-disabled.nice-select.open {
   display: flex;
   width: 100%;
   height: 91%;
+  min-height: 350px;
   background: #47b39b;
   border-radius: 1rem;
   margin-top: 2rem;
@@ -2683,6 +2701,95 @@ html .ui-button.ui-state-disabled.nice-select.open {
   color: #ffffff;
 }
 
+.extra-info {
+  padding-top: 2rem;
+}
+
+.extra-info .col {
+  padding: 0.5rem;
+}
+
+.extra-info .info-boxes {
+  border: 1px solid #47b39b;
+  border-radius: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.extra-info .info-boxes label {
+  text-align: center;
+  padding-top: 0 !important;
+}
+
+.extra-info .info-boxes label.gray {
+  color: #525252;
+}
+
+.extra-info .info-boxes .options.check {
+  display: flex;
+}
+
+.extra-info .info-boxes .options.check .chackbox-name {
+  color: #525252 !important;
+  font-size: 1.2rem;
+}
+
+.extra-info .info-boxes .image-upload-info .fg-upload-steps li {
+  list-style: none;
+}
+
+.fg-upload-steps li {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.fg-upload-steps li img {
+  width: 100%;
+}
+
+.fg-upload-steps li .step-is-done {
+  text-indent: -9999px;
+  width: 60px;
+  height: 30px;
+  position: relative;
+}
+
+.fg-upload-steps li .step-is-done:before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid #ff5924;
+  border-radius: 30px;
+}
+
+.fg-upload-steps li span {
+  flex: 1;
+  width: 100%;
+  padding-top: 4px;
+  color: #747474;
+  font-family: 'Alte Haas Grotesk';
+  font-weight: normal;
+  font-size: 1.3rem;
+}
+
+.fg-upload-steps li .step-is-done {
+  text-indent: -9999px;
+  width: 60px;
+  height: 30px;
+  position: relative;
+}
+
 .checkbox {
   display: flex;
   position: relative;
@@ -2726,6 +2833,55 @@ html .ui-button.ui-state-disabled.nice-select.open {
   margin: 0;
   line-height: 40px;
   cursor: pointer;
+}
+
+.radio-group {
+  display: flex;
+  position: relative;
+}
+
+.radio-group input[type=radio] {
+  opacity: 0;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-block-end: 20px;
+}
+
+.radio-group input[type=radio]:checked + label {
+  transition: all 0.3s ease-in-out;
+}
+
+.radio-group input[type=radio]:checked + label:after {
+  content: '';
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  border-radius: 14px;
+  background: #db5b46;
+  top: 2px;
+  left: 2px;
+}
+
+.radio-group .radio-lbl {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  border: 1px solid #db5b46;
+  padding: 0 !important;
+  margin: 10px;
+  display: inline-block;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.radio-group .radio-name {
+  display: inline-block;
+  padding: 0 !important;
+  margin: 0;
+  line-height: 40px;
+  cursor: pointer;
+  color: #525252 !important;
 }
 
 .wickedpicker {
@@ -2908,6 +3064,34 @@ input:checked + .slider:before {
   text-align: right;
   display: block;
   width: 100%;
+}
+
+.add-custom-ticket {
+  line-height: 34px;
+  height: 40px;
+  border: 2px solid #511948;
+  font-family: 'Alte Haas Grotesk';
+  font-weight: normal;
+  border-radius: 20px;
+  padding: 0 1rem;
+  margin: 2rem 0 0 1rem;
+  display: inline-block;
+  color: #525252;
+  transition: all 0.3s ease-in-out;
+}
+
+.add-custom-ticket:hover {
+  background: #511948;
+  color: #ffffff;
+}
+
+.add-custom-ticket.prev, .add-custom-ticket.next {
+  border-color: #db5b46;
+  margin: 2rem 0 0 0.5rem;
+}
+
+.add-custom-ticket.prev:hover, .add-custom-ticket.next:hover {
+  background: #db5b46;
 }
 
 /* Rounded sliders */
@@ -3634,6 +3818,31 @@ h1,
 }
 
 @media screen and (max-width: 991px) {
+  .nice-select {
+    margin-bottom: 1rem;
+  }
+
+  .tab-content .event-info input[type=text] {
+    margin-bottom: 1rem;
+  }
+
+  .tab-content .event-info label {
+    padding: 1rem 0;
+  }
+
+  .switched {
+    margin-bottom: 1rem;
+  }
+
+  .switched .slider {
+    height: 40px;
+  }
+
+  label.right-align {
+    text-align: left;
+    padding: 0 !important;
+  }
+
   .fr-login-tabs select {
     margin-bottom: 1rem;
   }
@@ -4008,5 +4217,58 @@ h1,
 
   .category-div {
     line-height: 36px;
+  }
+
+  .events-inner-page {
+    background: #fec153;
+    margin: -1rem 0 -135px 0;
+    height: 200px;
+  }
+
+  .tab-content .event-info {
+    padding: 5rem 0;
+  }
+
+  .nav-tabs .nav-item {
+    margin-bottom: -1px;
+    display: block;
+    width: 100%;
+  }
+
+  .offer-Info {
+    padding-top: 5rem;
+  }
+
+  .offer-toggle ul.tab-names {
+    display: block;
+  }
+
+  .offer-toggle ul.tab-names li {
+    display: block !important;
+    width: 100%;
+  }
+
+  .extra-info .info-boxes .options.check {
+    flex-wrap: wrap;
+  }
+
+  .fg-upload-steps {
+    padding: 0;
+  }
+
+  .fg-upload-steps li {
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .fg-upload-steps li img {
+    width: 88%;
+  }
+
+  .tabs-headings .nav-item:last-child .nav-link:after {
+    display: block;
   }
 }

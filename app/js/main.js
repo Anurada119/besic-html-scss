@@ -153,7 +153,7 @@ function repeatTabs() {
     $('.tab-names li a').on('click', function(e) {
         e.preventDefault();
     })
-    $('.offer-occorence-content .content-tbs:last-child').hide();
+    $('.offer-occorence-content .content-tbs.no-repeat').hide();
     $('.tab-names li').on('click', function() {
         var tab_id = $(this).attr('data-tab-name');
         console.log(tab_id);
@@ -168,7 +168,7 @@ function repeatTabs() {
 
 function settingsShow() {
     $('.settings-set').hide();
-    $('.settings').on('click', function () {
+    $('.settings').on('click', function() {
         $(this).parents('.line-items').children('.settings-set').slideToggle();
     })
 }
