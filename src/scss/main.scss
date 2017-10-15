@@ -1353,7 +1353,7 @@ html .ui-button.ui-state-disabled:active {
     input[type=checkbox] {
         opacity: 0;
         position: absolute;
-        width: 20px;
+        min-width: 20px;
         height: 20px;
         &:checked+label {
             @include transition-basic;
@@ -1369,7 +1369,7 @@ html .ui-button.ui-state-disabled:active {
         }
     }
     .checkbox-lbl {
-        width: 20px;
+        min-width: 20px;
         height: 20px;
         border: 1px solid $orange;
         padding: 0 !important;
@@ -1642,6 +1642,271 @@ input:checked+.slider:before {
 
 .slider.round:before {
     border-radius: 50%;
+}
+
+//profile section
+.profile-section {
+    max-width: $main-width;
+    margin: 3rem auto 0;
+    .pinboard-nav {
+        a {
+            display: block;
+            width: 100%;
+            text-align: center;
+            line-height: 40px;
+            background: transparent;
+            border-radius: 20px;
+            @include Alte-regular;
+            font-size: 1.2rem;
+            border: 1px solid $orange;
+            @include transition-basic;
+            color: $orange;
+            &:hover {
+                background: $orange;
+                color: $white;
+            }
+        }
+    }
+    .pinboard-event-offer {
+        border: 1px solid $green;
+        border-radius: 1rem;
+        padding: 1rem;
+        display: flex;
+        margin-bottom: 0.8rem;
+        .pin-evnt-image {
+            min-width: 230px;
+            img {
+                width: 100%;
+                min-width: 230px;
+                border-radius: 0.6rem;
+            }
+        }
+        .pin-evnt-content {
+            padding: 0 0.5rem 0 1rem;
+            h2 {
+                @include Alte-bold;
+                font-size: 1.3rem;
+                color: $dark-gray;
+            }
+            h3 {
+                @include Alte-bold;
+                font-size: 0.8rem;
+                color: $dark-gray;
+            }
+            p {
+                margin: 0;
+                @include Alte-regular;
+                font-size: 0.9rem;
+                position: relative;
+                color: $dark-gray;
+                &.old-price {
+                    display: inline-block;
+                    &:after {
+                        content: '';
+                        width: 110%;
+                        display: block;
+                        height: 1px;
+                        background: $dark-gray;
+                        position: absolute;
+                        top: 10px;
+                        left: 13px;
+                    }
+                }
+            }
+        }
+        .pin-evnt-actions {
+            a {
+                white-space: nowrap;
+                border: 1px solid $purple;
+                line-height: 40px;
+                display: block;
+                padding: 0 1rem;
+                border-radius: 20px;
+                text-align: center;
+                color: $purple;
+                @include transition-basic;
+                margin-bottom: 0.5rem;
+                &:hover {
+                    background: $purple;
+                    color: $white;
+                }
+                &.fg-button--icon {
+                    width: 42px !important;
+                    border: 1px solid $orange;
+                    color: $orange;
+                    &:hover {
+                        background: $orange;
+                        color: $white;
+                    }
+                }
+            }
+            .delete-icon {
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+    }
+    .profile-uploaded-box {
+        .profile-uploaded-photo {
+            img {
+                width: 180px;
+                height: 180px;
+                border-radius: 90px;
+            }
+        }
+    }
+    .profile-pinboard--box {
+        border: 1px solid $green;
+        border-radius: 1rem;
+        padding: 1rem 2rem 2rem;
+        margin-bottom: 1rem;
+        label {
+            display: block;
+            @include Alte-regular;
+            color: $dark-gray;
+            font-size: 1.3rem;
+            text-transform: lowercase;
+            padding: 1rem 0 0rem 0;
+            &.event-des {
+                padding: 1rem 0 0.5rem;
+            }
+        }
+        .nice-select {
+            width: 100%;
+            border: 1px solid $green;
+            background: transparent;
+            border-radius: 40px;
+            height: 40px;
+            font-size: 1rem;
+            ul.list {
+                width: 100%;
+            }
+            &:after {
+                border-bottom: none;
+                border-right: none;
+                content: '';
+                display: block;
+                height: 38px;
+                margin-top: 0;
+                pointer-events: none;
+                position: absolute;
+                right: 0;
+                top: 0;
+                transform-origin: initial;
+                transform: rotate(0);
+                transition: all 0.15s ease-in-out;
+                width: 38px;
+                background: url('../images/drop.png');
+                background-size: contain;
+            }
+        }
+    }
+    .payment-buttons {
+        button {
+            line-height: 40px;
+            @include Alte-regular;
+            background: transparent;
+            border: 1px solid $green;
+            border-radius: 22px;
+            padding: 0 1rem;
+            color: $green;
+            @include transition-basic;
+            &:hover {
+                background: $green;
+                cursor: pointer;
+                color: $white;
+            }
+        }
+    }
+    input[type=text],
+    input {
+        height: 40px;
+        border: 1px solid $green;
+        border-radius: 40px;
+        background: transparent;
+        display: block;
+        width: 100%;
+        padding: 0 1rem;
+        font-size: 1rem;
+        &:focus {
+            outline: none;
+            border-color: $green;
+            background: transparent;
+        }
+        &.required {
+            border-color: $orange;
+        }
+    }
+    .messages-list {
+        a {
+            display: block;
+            .message-row {
+                display: flex;
+                .avatar {
+                    display: inline-block;
+                    img {
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50px;
+                    }
+                }
+                .message-content {
+                    padding: 0 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    .messages-date {
+                        display: block;
+                        font-size: 0.8rem;
+                    }
+                }
+                .messages-subject {
+                    color: $dark-gray;
+                    font-size: 1rem;
+                    @include Alte-regular;
+                }
+            }
+        }
+    }
+    .settings-bot-box {
+        h2 {
+            @include Alte-bold;
+            font-size: 1.5rem;
+            color: $dark-gray;
+        }
+    }
+    .pin-evnt-content {
+        flex-grow: 1;
+    }
+    .pin-evnt-image {
+        width: 230px;
+    }
+    .fg-pending-past {
+        margin-bottom: 1rem;
+        border-bottom: none;
+        li {
+            a {
+                display: block;
+                line-height: 40px;
+                border: 1px solid $purple;
+                padding: 0 1rem;
+                border-radius: 22px;
+                background: transparent;
+                color: $purple;
+            }
+            &:first-child {
+                a {
+                    margin-right: 1rem;
+                }
+            }
+            &.active {
+                a {
+                    background: $purple;
+                    color: $white;
+                }
+            }
+        }
+    }
 }
 
 @import 'megamenu';

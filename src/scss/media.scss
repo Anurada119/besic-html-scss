@@ -421,4 +421,80 @@
                 }
             }
         }
+        .pinboard-nav {
+            margin-bottom: 2rem;
+        }
+        .pinboard-event-offer {
+            display: block !important;
+        }
+        .pin-evnt-image {
+            min-width: 100% !important;
+            margin-bottom: 1rem;
+        }
+        .pin-evnt-actions {
+            display: flex;
+            margin-top: 1rem;
+            div:first-child {
+                flex-grow: 1;
+                padding: 0 1rem 0 0;
+            }
+        }
+        .purchases {
+            .pin-evnt-actions {
+                display: flex;
+                margin-top: 1rem;
+                >div {
+                    padding-right: 1rem;
+                    &:last-child {
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+    }
+    
+    @media screen and (max-width:480px) {
+        .purchases {
+            .pin-evnt-actions {
+                display: flex;
+                margin-top: 1rem;
+                flex-wrap: wrap;
+                >div {
+                    width: 100%;
+                    a {
+                        width: 100%;
+                    }
+                    padding-right: 0rem;
+                    &:last-child {
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+        .fr-action-bar-wrap {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+    }
+    
+    @media screen and (max-width:360px) {
+        .message-row {
+            display: block !important;
+        }
+        .message-content {
+            padding: 0 !important;
+        }
+        .avatar {
+            display: flex !important;
+            justify-content: center;
+        }
+        .profile-section {
+            .profile-pinboard--box {
+                padding: 1rem !important;
+            }
+        }
+        .messages-date {
+            padding: 0.5rem 0;
+        }
     }

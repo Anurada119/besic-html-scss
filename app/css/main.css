@@ -2798,7 +2798,7 @@ html .ui-button.ui-state-disabled.nice-select.open {
 .checkbox input[type=checkbox] {
   opacity: 0;
   position: absolute;
-  width: 20px;
+  min-width: 20px;
   height: 20px;
 }
 
@@ -2817,7 +2817,7 @@ html .ui-button.ui-state-disabled.nice-select.open {
 }
 
 .checkbox .checkbox-lbl {
-  width: 20px;
+  min-width: 20px;
   height: 20px;
   border: 1px solid #db5b46;
   padding: 0 !important;
@@ -3101,6 +3101,302 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.profile-section {
+  max-width: 1140px;
+  margin: 3rem auto 0;
+}
+
+.profile-section .pinboard-nav a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  background: transparent;
+  border-radius: 20px;
+  font-family: 'Alte Haas Grotesk';
+  font-weight: normal;
+  font-size: 1.2rem;
+  border: 1px solid #db5b46;
+  transition: all 0.3s ease-in-out;
+  color: #db5b46;
+}
+
+.profile-section .pinboard-nav a:hover {
+  background: #db5b46;
+  color: #ffffff;
+}
+
+.profile-section .pinboard-event-offer {
+  border: 1px solid #47b39b;
+  border-radius: 1rem;
+  padding: 1rem;
+  display: flex;
+  margin-bottom: 0.8rem;
+}
+
+.profile-section .pinboard-event-offer .pin-evnt-image {
+  min-width: 230px;
+}
+
+.profile-section .pinboard-event-offer .pin-evnt-image img {
+  width: 100%;
+  min-width: 230px;
+  border-radius: 0.6rem;
+}
+
+.profile-section .pinboard-event-offer .pin-evnt-content {
+  padding: 0 0.5rem 0 1rem;
+}
+
+.profile-section .pinboard-event-offer .pin-evnt-content h2 {
+  font-family: 'Alte Haas Grotesk';
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #525252;
+}
+
+.profile-section .pinboard-event-offer .pin-evnt-content h3 {
+  font-family: 'Alte Haas Grotesk';
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: #525252;
+}
+
+.profile-section .pinboard-event-offer .pin-evnt-content p {
+  margin: 0;
+  font-family: 'Alte Haas Grotesk';
+  font-weight: normal;
+  font-size: 0.9rem;
+  position: relative;
+  color: #525252;
+}
+
+.profile-section .pinboard-event-offer .pin-evnt-content p.old-price {
+  display: inline-block;
+}
+
+.profile-section .pinboard-event-offer .pin-evnt-content p.old-price:after {
+  content: '';
+  width: 110%;
+  display: block;
+  height: 1px;
+  background: #525252;
+  position: absolute;
+  top: 10px;
+  left: 13px;
+}
+
+.profile-section .pinboard-event-offer .pin-evnt-actions a {
+  white-space: nowrap;
+  border: 1px solid #511948;
+  line-height: 40px;
+  display: block;
+  padding: 0 1rem;
+  border-radius: 20px;
+  text-align: center;
+  color: #511948;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 0.5rem;
+}
+
+.profile-section .pinboard-event-offer .pin-evnt-actions a:hover {
+  background: #511948;
+  color: #ffffff;
+}
+
+.profile-section .pinboard-event-offer .pin-evnt-actions a.fg-button--icon {
+  width: 42px !important;
+  border: 1px solid #db5b46;
+  color: #db5b46;
+}
+
+.profile-section .pinboard-event-offer .pin-evnt-actions a.fg-button--icon:hover {
+  background: #db5b46;
+  color: #ffffff;
+}
+
+.profile-section .pinboard-event-offer .pin-evnt-actions .delete-icon {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.profile-section .profile-uploaded-box .profile-uploaded-photo img {
+  width: 180px;
+  height: 180px;
+  border-radius: 90px;
+}
+
+.profile-section .profile-pinboard--box {
+  border: 1px solid #47b39b;
+  border-radius: 1rem;
+  padding: 1rem 2rem 2rem;
+  margin-bottom: 1rem;
+}
+
+.profile-section .profile-pinboard--box label {
+  display: block;
+  font-family: 'Alte Haas Grotesk';
+  font-weight: normal;
+  color: #525252;
+  font-size: 1.3rem;
+  text-transform: lowercase;
+  padding: 1rem 0 0rem 0;
+}
+
+.profile-section .profile-pinboard--box label.event-des {
+  padding: 1rem 0 0.5rem;
+}
+
+.profile-section .profile-pinboard--box .nice-select {
+  width: 100%;
+  border: 1px solid #47b39b;
+  background: transparent;
+  border-radius: 40px;
+  height: 40px;
+  font-size: 1rem;
+}
+
+.profile-section .profile-pinboard--box .nice-select ul.list {
+  width: 100%;
+}
+
+.profile-section .profile-pinboard--box .nice-select:after {
+  border-bottom: none;
+  border-right: none;
+  content: '';
+  display: block;
+  height: 38px;
+  margin-top: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform-origin: initial;
+  transform: rotate(0);
+  transition: all 0.15s ease-in-out;
+  width: 38px;
+  background: url("../images/drop.png");
+  background-size: contain;
+}
+
+.profile-section .payment-buttons button {
+  line-height: 40px;
+  font-family: 'Alte Haas Grotesk';
+  font-weight: normal;
+  background: transparent;
+  border: 1px solid #47b39b;
+  border-radius: 22px;
+  padding: 0 1rem;
+  color: #47b39b;
+  transition: all 0.3s ease-in-out;
+}
+
+.profile-section .payment-buttons button:hover {
+  background: #47b39b;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.profile-section input[type=text],
+  .profile-section input {
+  height: 40px;
+  border: 1px solid #47b39b;
+  border-radius: 40px;
+  background: transparent;
+  display: block;
+  width: 100%;
+  padding: 0 1rem;
+  font-size: 1rem;
+}
+
+.profile-section input[type=text]:focus,
+    .profile-section input:focus {
+  outline: none;
+  border-color: #47b39b;
+  background: transparent;
+}
+
+.profile-section input[type=text].required,
+    .profile-section input.required {
+  border-color: #db5b46;
+}
+
+.profile-section .messages-list a {
+  display: block;
+}
+
+.profile-section .messages-list a .message-row {
+  display: flex;
+}
+
+.profile-section .messages-list a .message-row .avatar {
+  display: inline-block;
+}
+
+.profile-section .messages-list a .message-row .avatar img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+}
+
+.profile-section .messages-list a .message-row .message-content {
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.profile-section .messages-list a .message-row .message-content .messages-date {
+  display: block;
+  font-size: 0.8rem;
+}
+
+.profile-section .messages-list a .message-row .messages-subject {
+  color: #525252;
+  font-size: 1rem;
+  font-family: 'Alte Haas Grotesk';
+  font-weight: normal;
+}
+
+.profile-section .settings-bot-box h2 {
+  font-family: 'Alte Haas Grotesk';
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #525252;
+}
+
+.profile-section .pin-evnt-content {
+  flex-grow: 1;
+}
+
+.profile-section .pin-evnt-image {
+  width: 230px;
+}
+
+.profile-section .fg-pending-past {
+  margin-bottom: 1rem;
+  border-bottom: none;
+}
+
+.profile-section .fg-pending-past li a {
+  display: block;
+  line-height: 40px;
+  border: 1px solid #511948;
+  padding: 0 1rem;
+  border-radius: 22px;
+  background: transparent;
+  color: #511948;
+}
+
+.profile-section .fg-pending-past li:first-child a {
+  margin-right: 1rem;
+}
+
+.profile-section .fg-pending-past li.active a {
+  background: #511948;
+  color: #ffffff;
 }
 
 h1,
@@ -4270,5 +4566,91 @@ h1,
 
   .tabs-headings .nav-item:last-child .nav-link:after {
     display: block;
+  }
+
+  .pinboard-nav {
+    margin-bottom: 2rem;
+  }
+
+  .pinboard-event-offer {
+    display: block !important;
+  }
+
+  .pin-evnt-image {
+    min-width: 100% !important;
+    margin-bottom: 1rem;
+  }
+
+  .pin-evnt-actions {
+    display: flex;
+    margin-top: 1rem;
+  }
+
+  .pin-evnt-actions div:first-child {
+    flex-grow: 1;
+    padding: 0 1rem 0 0;
+  }
+
+  .purchases .pin-evnt-actions {
+    display: flex;
+    margin-top: 1rem;
+  }
+
+  .purchases .pin-evnt-actions > div {
+    padding-right: 1rem;
+  }
+
+  .purchases .pin-evnt-actions > div:last-child {
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .purchases .pin-evnt-actions {
+    display: flex;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .purchases .pin-evnt-actions > div {
+    width: 100%;
+    padding-right: 0rem;
+  }
+
+  .purchases .pin-evnt-actions > div a {
+    width: 100%;
+  }
+
+  .purchases .pin-evnt-actions > div:last-child {
+    padding-right: 0;
+  }
+
+  .fr-action-bar-wrap {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .message-row {
+    display: block !important;
+  }
+
+  .message-content {
+    padding: 0 !important;
+  }
+
+  .avatar {
+    display: flex !important;
+    justify-content: center;
+  }
+
+  .profile-section .profile-pinboard--box {
+    padding: 1rem !important;
+  }
+
+  .messages-date {
+    padding: 0.5rem 0;
   }
 }
