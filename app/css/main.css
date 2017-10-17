@@ -3399,6 +3399,10 @@ input:checked + .slider:before {
   color: #ffffff;
 }
 
+.payment-card-option.profile-pinboard--box {
+  padding: 1rem 1rem 1rem 2rem;
+}
+
 h1,
 .h1 {
   font-size: 36px;

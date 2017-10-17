@@ -1909,6 +1909,12 @@ input:checked+.slider:before {
     }
 }
 
+.payment-card-option {
+    &.profile-pinboard--box {
+        padding: 1rem 1rem 1rem 2rem;
+    }
+}
+
 @import 'megamenu';
 @import 'sliders';
 @import 'footer';
