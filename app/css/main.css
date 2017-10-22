@@ -3323,8 +3323,45 @@ input:checked + .slider:before {
   border-color: #db5b46;
 }
 
+.profile-section .messages-list {
+  max-height: 800px;
+  overflow-y: auto;
+}
+
+.profile-section .messages-list::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #eaeced;
+}
+
+.profile-section .messages-list::-webkit-scrollbar {
+  width: 12px;
+  background-color: #eaeced;
+}
+
+.profile-section .messages-list::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #db5b46;
+}
+
 .profile-section .messages-list a {
+  margin-bottom: 0px;
+  border-radius: 0;
+  border-top: 1px solid #47b39b;
+  border-left: 1px solid #47b39b;
+  border-right: 1px solid #47b39b;
+  border-bottom: none;
   display: block;
+}
+
+.profile-section .messages-list a:last-child {
+  border-bottom: 1px solid #47b39b;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.profile-section .messages-list a:first-child {
+  border-radius: 1rem 1rem 0 0;
 }
 
 .profile-section .messages-list a .message-row {
@@ -3401,6 +3438,77 @@ input:checked + .slider:before {
 
 .payment-card-option.profile-pinboard--box {
   padding: 1rem 1rem 1rem 2rem;
+}
+
+.sign-out-section .dropdown > a {
+  background-color: transparent !important;
+  border: none;
+  color: #525252;
+  font-family: 'Alte Haas Grotesk';
+  font-weight: normal;
+  position: relative;
+  padding-left: 50px;
+}
+
+.sign-out-section .dropdown > a:before {
+  width: 40px;
+  height: 40px;
+  content: '';
+  display: block;
+  background: url("../images/pp.jpg");
+  background-size: cover;
+  position: absolute;
+  left: 0px;
+  top: 0;
+  border-radius: 50px;
+}
+
+.sign-out-section .dropdown > a:active, .sign-out-section .dropdown > a.nice-select.open, .sign-out-section .dropdown > a:focus {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.sign-out-section .dropdown .dropdown-menu {
+  background: #511948;
+}
+
+.sign-out-section .dropdown .dropdown-menu a {
+  color: #ffffff;
+}
+
+.sign-out-section .dropdown .dropdown-menu a:hover {
+  background: transparent;
+  color: #db5b46;
+}
+
+.nice-select .list {
+  background: #511948;
+  color: #ffffff;
+  max-height: 250px !important;
+  overflow-y: auto;
+}
+
+.nice-select .list::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #78256b;
+}
+
+.nice-select .list::-webkit-scrollbar {
+  width: 12px;
+  background-color: #78256b;
+}
+
+.nice-select .list::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #db5b46;
+}
+
+.nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {
+  background: transparent;
+  color: #db5b46;
 }
 
 h1,
