@@ -1959,13 +1959,12 @@ input:checked+.slider:before {
             @include Alte-regular;
             position: relative;
             padding-left: 50px;
-            &:before{
+            .profile-pic{
                 width: 40px;
                 height: 40px;
                 content: '';
                 display: block;
-                background: url('../images/pp.jpg');
-                background-size: cover;
+                background-size: cover !important;
                 position: absolute;
                 left: 0px;
                 top: 0;
