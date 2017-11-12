@@ -2024,6 +2024,236 @@ input:checked+.slider:before {
     color: $orange;
 }
 
+.fr-work-with-us{
+    padding: 0;
+
+    .wwu-header{
+        height: 545px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        background: url('../images/shopping.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        &:before{
+            content: '';
+            display: block;
+            width: 100% ;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            background: $purple;
+            opacity: 0.7;
+        }
+
+        h3{
+            width: 100%;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            @include hanken-book;
+            font-size: 70px;
+            color: $white;
+            z-index: 2;
+            position: relative;
+        }
+
+        h5{
+            width: 100%;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            @include hanken-book;
+            font-size: 48px;
+            color: $white;
+            z-index: 2;
+            position: relative;
+        }
+    }
+    .second-section{
+        height: 675px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background: $white;
+
+        h5{
+            width: 100%;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            @include hanken-light;
+            font-size: 48px;
+            color: $orange;
+        }
+
+        div{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        img{
+            display: flex;
+            margin-bottom: 50px;
+            width: 100%;
+            height: 100%;
+            max-width: 535px;
+        }
+    }
+    .about-frugl{
+        background: $orange;
+        padding: 90px 0;
+        display: flex;
+        justify-content: center;
+
+        div{
+            max-width: 980px;
+            text-align: center;
+
+            p{
+                @include hanken-light;
+                font-size: 24px;
+                color: $white;
+                text-align: center;
+                margin-bottom: 40px;
+            }
+            h2{
+                text-align: center;
+                @include hanken-light;
+                font-size: 48px;
+                color: $white;
+                margin-bottom: 40px;
+            }
+
+            a{
+                font-size: 20px;
+                @include hanken-light;
+                color: $white;
+                border: 1px solid $white;
+                border-radius: 40px;
+                padding: 0.3rem 1rem;
+                text-align: center;
+                display: inline-block;
+                &:hover{
+                    color: $white;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .why-frugl{
+        padding: 90px 0;
+        background: url('../images/nearby.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        &:before{
+            content: '';
+            display: block;
+            width: 100% ;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            background: $purple;
+            opacity: 0.7;
+        }
+        
+        div{
+            max-width: $main-width;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+
+            h2{
+                @include hanken-book;
+                font-size: 48px;
+                color: $white;
+            }
+        }
+
+        h3{
+            font-size: 28px;
+            color: $orange;
+            margin-bottom: 70px;
+            margin-top: 70px;
+        }
+
+        p{
+            @include hanken-book;
+            font-size: 17px;
+            color: $white;
+        }
+    }
+    .frugl-points{
+        padding: 90px 0;
+        div{
+            max-width: $main-width;
+            margin: 0 auto;
+
+            h2{
+                display: flex;
+                font-size: 18px !important;
+                margin-bottom: 50px;
+                margin-left: 40px;
+                 &:before{
+                     height: 40px;
+                     min-width: 40px;
+                     display: block;
+                     border-radius: 40px;
+                     content: '';
+                     background: $purple;
+                     margin-right: 10px;
+                     margin-bottom: 20px;
+                     position: absolute;
+                     top: -10px;
+                     left: -10px;
+                 }
+            }
+        }
+    }
+    .who-frugl{
+        padding: 90px 0;
+        background: $orange;
+
+        div{
+            max-width: $main-width;
+            margin: 0 auto;
+            text-align: center;
+            color: $white;
+
+            h2{
+                @include hanken-book;
+                font-size: 48px;
+                margin-bottom: 40px;
+            }
+
+            p{
+                @include hanken-book;
+                font-size: 24px;
+                margin-bottom: 40px;
+            }
+            a{
+                font-size: 20px;
+                @include hanken-light;
+                color: $white;
+                border: 1px solid $white;
+                border-radius: 40px;
+                padding: 0.3rem 1rem;
+                text-align: center;
+                display: inline-block;
+                &:hover{
+                    color: $white;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
 @import 'megamenu';
 @import 'sliders';
 @import 'footer';
