@@ -476,6 +476,118 @@
             width: 100%;
             justify-content: space-between;
         }
+
+        .fr-work-with-us{
+            
+            .wwu-header{
+                height: 545px;
+        
+                h3{
+                    margin: 0 0 10px 0;
+                    font-size: 40px;
+                }
+        
+                h5{
+                    font-size: 30px;
+                }
+            }
+            .second-section{
+                height: 675px;
+                padding: 1rem 0.5rem;
+        
+                h5{
+                    font-size: 30px;
+                }
+            }
+            .about-frugl{
+                padding: 90px 1rem;
+        
+                div{
+        
+                    p{
+                        font-size: 20px;
+                    }
+                    h2{
+                        font-size: 30px;
+                    }
+        
+                }
+            }
+            .why-frugl{
+                padding: 90px 0;
+                
+                div{
+                    
+        
+                    h2{
+                        font-size: 30px;
+                    }
+                }
+        
+                h3{
+                    font-size: 20px;
+                }
+        
+                p{
+                    font-size: 17px;
+                }
+            }
+            .frugl-points{
+                padding: 90px 0;
+                div{
+        
+                    h2{
+                        display: flex;
+                        font-size: 18px !important;
+                        margin-bottom: 50px;
+                        margin-left: 60px;
+                         &:before{
+                             height: 40px;
+                             min-width: 40px;
+                             display: block;
+                             border-radius: 40px;
+                             content: '';
+                             background: $purple;
+                             margin-right: 10px;
+                             margin-bottom: 20px;
+                             position: absolute;
+                             top: -10px;
+                             left: 20px;
+                         }
+                    }
+                }
+            }
+            .who-frugl{
+                padding: 90px 0;
+                background: $orange;
+        
+                div{
+                    padding: 0 1rem;
+        
+                    h2{
+                        font-size: 30px;
+                    }
+        
+                    p{
+                        font-size: 20px;
+                    }
+                    a{
+                        font-size: 20px;
+                        @include hanken-light;
+                        color: $white;
+                        border: 1px solid $white;
+                        border-radius: 40px;
+                        padding: 0.3rem 1rem;
+                        text-align: center;
+                        display: inline-block;
+                        &:hover{
+                            color: $white;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
     }
     
     @media screen and (max-width:360px) {

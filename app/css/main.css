@@ -1356,14 +1356,14 @@ h1,
 }
 
 .items.green-items .item:hover .item-wrapp .item-location:before {
-  background: url("../images/item-icons.png") #47b39b;
+  background: url("../images/item-icons-white.png") #47b39b;
   background-repeat: no-repeat;
   background-position: 7px;
   background-size: 33px;
 }
 
 .items.green-items .item:hover .item-wrapp .item-date:before {
-  background: url("../images/item-icons.png") #47b39b;
+  background: url("../images/item-icons-white.png") #47b39b;
   background-repeat: no-repeat;
   background-position: -11px;
   background-size: 30px;
@@ -3510,260 +3510,6 @@ input:checked + .slider:before {
   color: #db5b46;
 }
 
-.fr-work-with-us {
-  padding: 0;
-}
-
-.fr-work-with-us .wwu-header {
-  height: 545px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  background: url("../images/shopping.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.fr-work-with-us .wwu-header:before {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  background: #511948;
-  opacity: 0.7;
-}
-
-.fr-work-with-us .wwu-header h3 {
-  width: 100%;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  font-family: 'Hanken';
-  font-weight: normal;
-  font-size: 70px;
-  color: #ffffff;
-  z-index: 2;
-  position: relative;
-}
-
-.fr-work-with-us .wwu-header h5 {
-  width: 100%;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  font-family: 'Hanken';
-  font-weight: normal;
-  font-size: 48px;
-  color: #ffffff;
-  z-index: 2;
-  position: relative;
-}
-
-.fr-work-with-us .second-section {
-  height: 675px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  background: #ffffff;
-}
-
-.fr-work-with-us .second-section h5 {
-  width: 100%;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  font-family: 'Hanken';
-  font-weight: 300;
-  font-size: 48px;
-  color: #db5b46;
-}
-
-.fr-work-with-us .second-section div {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.fr-work-with-us .second-section img {
-  display: flex;
-  margin-bottom: 50px;
-  width: 100%;
-  height: 100%;
-  max-width: 535px;
-}
-
-.fr-work-with-us .about-frugl {
-  background: #db5b46;
-  padding: 90px 0;
-  display: flex;
-  justify-content: center;
-}
-
-.fr-work-with-us .about-frugl div {
-  max-width: 980px;
-  text-align: center;
-}
-
-.fr-work-with-us .about-frugl div p {
-  font-family: 'Hanken';
-  font-weight: 300;
-  font-size: 24px;
-  color: #ffffff;
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.fr-work-with-us .about-frugl div h2 {
-  text-align: center;
-  font-family: 'Hanken';
-  font-weight: 300;
-  font-size: 48px;
-  color: #ffffff;
-  margin-bottom: 40px;
-}
-
-.fr-work-with-us .about-frugl div a {
-  font-size: 20px;
-  font-family: 'Hanken';
-  font-weight: 300;
-  color: #ffffff;
-  border: 1px solid #ffffff;
-  border-radius: 40px;
-  padding: 0.3rem 1rem;
-  text-align: center;
-  display: inline-block;
-}
-
-.fr-work-with-us .about-frugl div a:hover {
-  color: #ffffff;
-  cursor: pointer;
-}
-
-.fr-work-with-us .why-frugl {
-  padding: 90px 0;
-  background: url("../images/nearby.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.fr-work-with-us .why-frugl:before {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  background: #511948;
-  opacity: 0.7;
-}
-
-.fr-work-with-us .why-frugl div {
-  max-width: 1140px;
-  margin: 0 auto;
-  text-align: center;
-  position: relative;
-}
-
-.fr-work-with-us .why-frugl div h2 {
-  font-family: 'Hanken';
-  font-weight: normal;
-  font-size: 48px;
-  color: #ffffff;
-}
-
-.fr-work-with-us .why-frugl h3 {
-  font-size: 28px;
-  color: #db5b46;
-  margin-bottom: 70px;
-  margin-top: 70px;
-}
-
-.fr-work-with-us .why-frugl p {
-  font-family: 'Hanken';
-  font-weight: normal;
-  font-size: 17px;
-  color: #ffffff;
-}
-
-.fr-work-with-us .frugl-points {
-  padding: 90px 0;
-}
-
-.fr-work-with-us .frugl-points div {
-  max-width: 1140px;
-  margin: 0 auto;
-}
-
-.fr-work-with-us .frugl-points div h2 {
-  display: flex;
-  font-size: 18px !important;
-  margin-bottom: 50px;
-  margin-left: 40px;
-}
-
-.fr-work-with-us .frugl-points div h2:before {
-  height: 40px;
-  min-width: 40px;
-  display: block;
-  border-radius: 40px;
-  content: '';
-  background: #511948;
-  margin-right: 10px;
-  margin-bottom: 20px;
-  position: absolute;
-  top: -10px;
-  left: -10px;
-}
-
-.fr-work-with-us .who-frugl {
-  padding: 90px 0;
-  background: #db5b46;
-}
-
-.fr-work-with-us .who-frugl div {
-  max-width: 1140px;
-  margin: 0 auto;
-  text-align: center;
-  color: #ffffff;
-}
-
-.fr-work-with-us .who-frugl div h2 {
-  font-family: 'Hanken';
-  font-weight: normal;
-  font-size: 48px;
-  margin-bottom: 40px;
-}
-
-.fr-work-with-us .who-frugl div p {
-  font-family: 'Hanken';
-  font-weight: normal;
-  font-size: 24px;
-  margin-bottom: 40px;
-}
-
-.fr-work-with-us .who-frugl div a {
-  font-size: 20px;
-  font-family: 'Hanken';
-  font-weight: 300;
-  color: #ffffff;
-  border: 1px solid #ffffff;
-  border-radius: 40px;
-  padding: 0.3rem 1rem;
-  text-align: center;
-  display: inline-block;
-}
-
-.fr-work-with-us .who-frugl div a:hover {
-  color: #ffffff;
-  cursor: pointer;
-}
-
 h1,
 .h1 {
   font-size: 36px;
@@ -3996,14 +3742,14 @@ h1,
 }
 
 .items.green-items .item:hover .item-wrapp .item-location:before {
-  background: url("../images/item-icons.png") #47b39b;
+  background: url("../images/item-icons-white.png") #47b39b;
   background-repeat: no-repeat;
   background-position: 7px;
   background-size: 33px;
 }
 
 .items.green-items .item:hover .item-wrapp .item-date:before {
-  background: url("../images/item-icons.png") #47b39b;
+  background: url("../images/item-icons-white.png") #47b39b;
   background-repeat: no-repeat;
   background-position: -11px;
   background-size: 30px;
@@ -4470,6 +4216,260 @@ h1,
   justify-content: center;
   margin: 0;
   width: 100%;
+}
+
+.fr-work-with-us {
+  padding: 0;
+}
+
+.fr-work-with-us .wwu-header {
+  height: 545px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: url("../images/shopping.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.fr-work-with-us .wwu-header:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background: #511948;
+  opacity: 0.7;
+}
+
+.fr-work-with-us .wwu-header h3 {
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-family: 'Hanken';
+  font-weight: normal;
+  font-size: 70px;
+  color: #ffffff;
+  z-index: 2;
+  position: relative;
+}
+
+.fr-work-with-us .wwu-header h5 {
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-family: 'Hanken';
+  font-weight: normal;
+  font-size: 48px;
+  color: #ffffff;
+  z-index: 2;
+  position: relative;
+}
+
+.fr-work-with-us .second-section {
+  height: 675px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+}
+
+.fr-work-with-us .second-section h5 {
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-family: 'Hanken';
+  font-weight: 300;
+  font-size: 48px;
+  color: #db5b46;
+}
+
+.fr-work-with-us .second-section div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.fr-work-with-us .second-section img {
+  display: flex;
+  margin-bottom: 50px;
+  width: 100%;
+  height: 100%;
+  max-width: 535px;
+}
+
+.fr-work-with-us .about-frugl {
+  background: #db5b46;
+  padding: 90px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.fr-work-with-us .about-frugl div {
+  max-width: 980px;
+  text-align: center;
+}
+
+.fr-work-with-us .about-frugl div p {
+  font-family: 'Hanken';
+  font-weight: 300;
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.fr-work-with-us .about-frugl div h2 {
+  text-align: center;
+  font-family: 'Hanken';
+  font-weight: 300;
+  font-size: 48px;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.fr-work-with-us .about-frugl div a {
+  font-size: 20px;
+  font-family: 'Hanken';
+  font-weight: 300;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 40px;
+  padding: 0.3rem 1rem;
+  text-align: center;
+  display: inline-block;
+}
+
+.fr-work-with-us .about-frugl div a:hover {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.fr-work-with-us .why-frugl {
+  padding: 90px 0;
+  background: url("../images/nearby.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.fr-work-with-us .why-frugl:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background: #511948;
+  opacity: 0.7;
+}
+
+.fr-work-with-us .why-frugl div {
+  max-width: 1140px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+.fr-work-with-us .why-frugl div h2 {
+  font-family: 'Hanken';
+  font-weight: normal;
+  font-size: 48px;
+  color: #ffffff;
+}
+
+.fr-work-with-us .why-frugl h3 {
+  font-size: 28px;
+  color: #db5b46;
+  margin-bottom: 70px;
+  margin-top: 70px;
+}
+
+.fr-work-with-us .why-frugl p {
+  font-family: 'Hanken';
+  font-weight: normal;
+  font-size: 17px;
+  color: #ffffff;
+}
+
+.fr-work-with-us .frugl-points {
+  padding: 90px 0;
+}
+
+.fr-work-with-us .frugl-points div {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.fr-work-with-us .frugl-points div h2 {
+  display: flex;
+  font-size: 18px !important;
+  margin-bottom: 50px;
+  margin-left: 40px;
+}
+
+.fr-work-with-us .frugl-points div h2:before {
+  height: 40px;
+  min-width: 40px;
+  display: block;
+  border-radius: 40px;
+  content: '';
+  background: #511948;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
+
+.fr-work-with-us .who-frugl {
+  padding: 90px 0;
+  background: #db5b46;
+}
+
+.fr-work-with-us .who-frugl div {
+  max-width: 1140px;
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff;
+}
+
+.fr-work-with-us .who-frugl div h2 {
+  font-family: 'Hanken';
+  font-weight: normal;
+  font-size: 48px;
+  margin-bottom: 40px;
+}
+
+.fr-work-with-us .who-frugl div p {
+  font-family: 'Hanken';
+  font-weight: normal;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.fr-work-with-us .who-frugl div a {
+  font-size: 20px;
+  font-family: 'Hanken';
+  font-weight: 300;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 40px;
+  padding: 0.3rem 1rem;
+  text-align: center;
+  display: inline-block;
+}
+
+.fr-work-with-us .who-frugl div a:hover {
+  color: #ffffff;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 991px) {
@@ -4994,6 +4994,115 @@ h1,
     display: flex;
     width: 100%;
     justify-content: space-between;
+  }
+
+  .fr-work-with-us .wwu-header {
+    height: 545px;
+  }
+
+  .fr-work-with-us .wwu-header h3 {
+    margin: 0 0 10px 0;
+    font-size: 40px;
+  }
+
+  .fr-work-with-us .wwu-header h5 {
+    font-size: 30px;
+  }
+
+  .fr-work-with-us .second-section {
+    height: 675px;
+    padding: 1rem 0.5rem;
+  }
+
+  .fr-work-with-us .second-section h5 {
+    font-size: 30px;
+  }
+
+  .fr-work-with-us .about-frugl {
+    padding: 90px 1rem;
+  }
+
+  .fr-work-with-us .about-frugl div p {
+    font-size: 20px;
+  }
+
+  .fr-work-with-us .about-frugl div h2 {
+    font-size: 30px;
+  }
+
+  .fr-work-with-us .why-frugl {
+    padding: 90px 0;
+  }
+
+  .fr-work-with-us .why-frugl div h2 {
+    font-size: 30px;
+  }
+
+  .fr-work-with-us .why-frugl h3 {
+    font-size: 20px;
+  }
+
+  .fr-work-with-us .why-frugl p {
+    font-size: 17px;
+  }
+
+  .fr-work-with-us .frugl-points {
+    padding: 90px 0;
+  }
+
+  .fr-work-with-us .frugl-points div h2 {
+    display: flex;
+    font-size: 18px !important;
+    margin-bottom: 50px;
+    margin-left: 60px;
+  }
+
+  .fr-work-with-us .frugl-points div h2:before {
+    height: 40px;
+    min-width: 40px;
+    display: block;
+    border-radius: 40px;
+    content: '';
+    background: #511948;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    position: absolute;
+    top: -10px;
+    left: 20px;
+  }
+
+  .fr-work-with-us .who-frugl {
+    padding: 90px 0;
+    background: #db5b46;
+  }
+
+  .fr-work-with-us .who-frugl div {
+    padding: 0 1rem;
+  }
+
+  .fr-work-with-us .who-frugl div h2 {
+    font-size: 30px;
+  }
+
+  .fr-work-with-us .who-frugl div p {
+    font-size: 20px;
+  }
+
+  .fr-work-with-us .who-frugl div a {
+    font-size: 20px;
+    font-family: 'Hanken';
+    font-weight: 300;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 40px;
+    padding: 0.3rem 1rem;
+    text-align: center;
+    display: inline-block;
+  }
+
+  .fr-work-with-us .who-frugl div a:hover {
+    color: #ffffff;
+    cursor: pointer;
   }
 }
 
