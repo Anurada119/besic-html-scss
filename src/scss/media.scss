@@ -355,6 +355,11 @@
         .category-switch {
             display: block !important;
         }
+        .item-section-header{
+            .item-section-title{
+                transform: translate(0, 4px);
+            }
+        }
         .item-section-header.mobile {
             display: block;
         }
