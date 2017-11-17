@@ -1240,7 +1240,7 @@ h1,
   text-transform: uppercase;
   line-height: 40px;
   margin: 0;
-  transform: translate(3px, 46px);
+  transform: translate(3px, 10px);
 }
 
 .item-section-header div {
@@ -3626,7 +3626,7 @@ h1,
   text-transform: uppercase;
   line-height: 40px;
   margin: 0;
-  transform: translate(3px, 46px);
+  transform: translate(3px, 10px);
 }
 
 .item-section-header div {
