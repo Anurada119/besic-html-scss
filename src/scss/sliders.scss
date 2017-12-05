@@ -49,6 +49,13 @@
                     color: $white !important;
                 }
             }
+            &.event-btn {
+                border-color: $orange;
+                &:hover {
+                    background: $orange;
+                    color: $white !important;
+                }
+            }
         }
     }
 }
@@ -56,6 +63,15 @@
 .items {
     &.yellow-items {
         .item {
+            .item-price{
+                
+
+                .price{
+                    >p{
+                        color: $yellow;
+                    }
+                }
+            }
             outline: none;
             &:hover {
                 .item-wrapp {
@@ -72,6 +88,8 @@
                     }
                     .item-price {
                         color: $yellow;
+                        display: flex;
+                        
                     }
                     .item-location {
                         &:before {
@@ -97,18 +115,24 @@
                     .item-image {
                         .featured {
                             display: block;
-                            background: $yellow;
+                            background: transparent;
                             opacity: 1;
                         }
                     }
                     .item-price {
-                        background: $yellow;
-                        color: $dark-gray;
+                        background: $white;
+                        color: $yellow;
+                        display: flex;
+                        
+                        .price{
+                            display: flex;
+                            flex-wrap: wrap;
+                        }
                     }
                 }
                 &:hover {
                     .item-price {
-                        color: $dark-gray;
+                        color: $yellow;
                     }
                 } //end of featured
             }
@@ -116,6 +140,22 @@
     }
     &.green-items {
         .item {
+            
+            .item-price{
+                
+
+                .price{
+                    >p{
+                        color: $green;
+                    }
+                }
+
+                .discount{
+                    span{
+                        background: $green !important;
+                    }
+                }
+            }
             outline: none;
             &:hover {
                 .item-wrapp {
@@ -157,19 +197,19 @@
                     .item-image {
                         .featured {
                             display: block;
-                            background: $green;
+                            background: transparent;
                             color: $white;
                             opacity: 1;
                         }
                     }
                     .item-price {
-                        background: $green;
-                        color: $white;
+                        background: $white;
+                        color: $green;
                     }
                 }
                 &:hover {
                     .item-price {
-                        color: $white;
+                        color: $green;
                     }
                 } //end of featured
             }
@@ -177,6 +217,45 @@
     }
     &.purple-items {
         .item {
+            &.free-item{
+                .free-item-item{
+                    display: block;
+                    width: 50px;
+                    height: 50px;
+                    background: url(../images/free.png);
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                }
+                .item-price{
+                    .price{
+                        span{
+                            display: none !important;
+                            p{
+                                display: none !important;
+                            }
+                        }
+                        p{
+                            display: none;
+                        }
+                    }
+                }
+            }
+            
+            .item-price{
+                
+
+                .price{
+                    >p{
+                        color: $purple;
+                    }
+                }
+                
+                .discount{
+                    span{
+                        background: $purple !important;
+                    }
+                }
+            }
             outline: none;
             &:hover {
                 .item-wrapp {
@@ -218,19 +297,119 @@
                     .item-image {
                         .featured {
                             display: block;
-                            background: $purple;
+                            background: transparent;
                             color: $white;
                             opacity: 1;
                         }
                     }
                     .item-price {
-                        background: $purple;
-                        color: $white;
+                        background: $white;
+                        color: $purple !important;
                     }
                 }
                 &:hover {
                     .item-price {
-                        color: $white;
+                        color: $purple;
+                    }
+                } //end of featured
+            }
+        }
+    }
+    &.orange-items {
+        .item {
+            &.free-item{
+                .free-item-item{
+                    display: block;
+                    width: 50px;
+                    height: 50px;
+                    background: url(../images/free.png);
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                }
+                .item-price{
+                    .price{
+                        span{
+                            display: none !important;
+                            p{
+                                display: none !important;
+                            }
+                        }
+                        p{
+                            display: none;
+                        }
+                    }
+                }
+            }
+            
+            .item-price{
+                
+
+                .price{
+                    >p{
+                        color: $orange;
+                    }
+                }
+                
+                .discount{
+                    span{
+                        background: $orange !important;
+                    }
+                }
+            }
+            outline: none;
+            &:hover {
+                .item-wrapp {
+                    .item-image {
+                        .overlay-icon {
+                            display: block;
+                            opacity: 1;
+                            background: url('../images/item-overlays.png') $orange;
+                            background-repeat: no-repeat;
+                            background-size: 76px;
+                            background-position: -46px -3px;
+                            z-index: 9999;
+                        }
+                    }
+                    .item-price {
+                        color: $purple;
+                    }
+                    .item-location {
+                        &:before {
+                            background: url('../images/item-icons-white.png') $orange;
+                            background-repeat: no-repeat;
+                            background-position: 7px;
+                            background-size: 33px;
+                        }
+                    }
+                    .item-date {
+                        &:before {
+                            background: url('../images/item-icons-white.png') $orange;
+                            background-repeat: no-repeat;
+                            background-position: -11px;
+                            background-size: 30px;
+                        }
+                    }
+                }
+            }
+            &.featured {
+                //start of featured
+                .item-wrapp {
+                    .item-image {
+                        .featured {
+                            display: block;
+                            background: transparent;
+                            color: $white;
+                            opacity: 1;
+                        }
+                    }
+                    .item-price {
+                        background: $white;
+                        color: $purple !important;
+                    }
+                }
+                &:hover {
+                    .item-price {
+                        color: $orange;
                     }
                 } //end of featured
             }
@@ -239,17 +418,33 @@
     .item {
         outline: none;
         cursor: pointer;
+        .free-item-item{
+            display: none;
+        }
+        
         &.featured {
             //start of featured
             .item-wrapp {
+                border: 5px solid $orange;
+                padding-bottom: 0;
                 .item-image {
                     .featured {
+                        width: 40px;
+                        height: 40px;
+                        position: absolute;
                         display: block;
-                        background: $yellow;
+                        background: url('../images/item-overlays.png') !important;
+                        background-repeat: no-repeat;
+                        background-size: 76px !important;
+                        bottom: 1rem;
+                        left: 1rem;
+                        z-index: 3;
                     }
                 }
                 .item-price {
                     background: $yellow;
+
+                    
                 }
             } //end of featured
         }
@@ -259,14 +454,14 @@
                 .item-image {
                     border: 5px solid $red;
                     .promo-icon {
-                        width: 50px;
-                        height: 50px;
+                        width: 40px;
+                        height: 40px;
                         position: absolute;
                         display: block;
                         background: url('../images/item-overlays.png');
                         background-repeat: no-repeat;
-                        background-size: 96px;
-                        top: 1rem;
+                        background-size: 76px;
+                        bottom: 1rem;
                         left: 1rem;
                         z-index: 3;
                     }
@@ -293,7 +488,8 @@
             //end of promoted
         }
         .item-wrapp {
-            margin: 0 0.8rem;
+            margin: 0 0.8rem 0 0;
+            padding-bottom: 10px;
             background: $white;
             .item-image {
                 width: 100%;
@@ -315,7 +511,7 @@
                 .featured {
                     display: block;
                     width: 100%;
-                    background: $yellow;
+                    background: transparent;
                     text-align: center;
                     position: absolute;
                     bottom: 0;
@@ -423,7 +619,7 @@
             }
             .item-price {
                 display: flex;
-                justify-content: flex-end;
+                justify-content: space-between;
                 @include hanken-book;
                 font-size: 21px;
                 color: $black;
@@ -431,24 +627,65 @@
                 margin: 0;
                 @include transition-basic;
                 padding: 1rem;
-                span {
-                    @include hanken-light;
-                    font-size: 18px;
-                    line-height: 21px;
-                    margin: 0 1rem;
-                    position: relative;
-                    transform: translate(0, 2px);
-                    color: $medium-gray;
-                    &:after {
-                        content: '';
-                        width: 120%;
-                        height: 1px;
-                        background: $medium-gray;
-                        display: block;
-                        position: absolute;
-                        top: 8px;
-                        left: -10%;
+                .price{
+                    span{
+                        @include hanken-light;
+                        font-size: 18px;
+                        line-height: 21px;
+                        margin: 0;
+                        position: relative;
+                        transform: translate(0, 2px);
+                        color: $medium-gray;
+                        width: 100%;
+                        display: flex;
+                        justify-content: flex-end;
+                        p{
+                            display: inline-block;
+                            position: relative;
+                            margin-bottom: 3px;
+                            &:after {
+                                content: '';
+                                width: 120%;
+                                height: 1px;
+                                background: $medium-gray;
+                                display: block;
+                                position: absolute;
+                                top: 8px;
+                                left: -10%;
+                            }
+                        }
                     }
+                    >p{
+                        width: 100%;
+                        text-align: right;
+                        margin-bottom: 0;
+                    }
+                }
+
+                .discount{
+                    display: flex;
+                    
+                    span{
+                        white-space: nowrap;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        background: $yellow;
+                        margin: 0 !important;
+                        line-height: 0 !important;
+                        height: 50px;
+                        padding: 10px 1rem !important;
+                        transform: translate(-16px, 0);
+                        color: $white !important;
+                        &:after{
+                            display: none;
+                        }
+                    }
+                        
+                }
+                span {
+                    
+                    
                 }
             }
         }
