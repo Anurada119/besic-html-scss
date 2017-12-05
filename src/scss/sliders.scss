@@ -11,7 +11,7 @@
         text-transform: uppercase;
         line-height: 40px;
         margin: 0;
-        transform: translate(0, 4px);
+        transform: translate(3px, 10px);
     }
     div {
         display: flex;
@@ -175,7 +175,7 @@
                     }
                     .item-location {
                         &:before {
-                            background: url('../images/item-icons.png') $green;
+                            background: url('../images/item-icons-white.png') $green;
                             background-repeat: no-repeat;
                             background-position: 7px;
                             background-size: 33px;
@@ -183,7 +183,7 @@
                     }
                     .item-date {
                         &:before {
-                            background: url('../images/item-icons.png') $green;
+                            background: url('../images/item-icons-white.png') $green;
                             background-repeat: no-repeat;
                             background-position: -11px;
                             background-size: 30px;
