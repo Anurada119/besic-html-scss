@@ -72,6 +72,12 @@
                     }
                 }
             }
+            .item-ex-date{
+                &.special{
+                    @include Alte-bold;
+                    color: $yellow !important;
+                }
+            }
             outline: none;
             &:hover {
                 .item-wrapp {
@@ -156,6 +162,12 @@
                     }
                 }
             }
+            .item-ex-date{
+                &.special{
+                    @include Alte-bold;
+                    color: $green !important;
+                }
+            }
             outline: none;
             &:hover {
                 .item-wrapp {
@@ -238,6 +250,12 @@
                             display: none;
                         }
                     }
+                }
+            }
+            .item-ex-date{
+                &.special{
+                    @include Alte-bold;
+                    color: $purple !important;
                 }
             }
             
@@ -338,6 +356,13 @@
                             display: none;
                         }
                     }
+                }
+            }
+
+            .item-ex-date{
+                &.special{
+                    @include Alte-bold;
+                    color: $orange !important;
                 }
             }
             
@@ -609,6 +634,25 @@
                         position: absolute;
                         left: 0;
                         @include transition-basic;
+                    }
+                }
+                .item-ex-date{
+                    font-size: 0.8rem;
+                    color: #888;
+                    margin-left: 24px;
+                    margin-top: 0.5rem;
+                    margin-bottom: 0.5rem;
+                    &:before{
+                        display: block;
+                        content: '';
+                        width: 20px;
+                        height: 20px;
+                        position: absolute;
+                        background: url('../images/clock.png');
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        margin-left: -24px;
+                        margin-top: -4px;
                     }
                 }
                 .item-tag {

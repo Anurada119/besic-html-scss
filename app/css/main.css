@@ -1307,6 +1307,12 @@ h1,
   color: #fec153;
 }
 
+.items.yellow-items .item .item-ex-date.special {
+  font-family: 'Alte Haas Grotesk';
+  font-weight: bold;
+  color: #fec153 !important;
+}
+
 .items.yellow-items .item:hover .item-wrapp .item-image .overlay-icon {
   display: block;
   background: url("../images/item-overlays.png") #fec153;
@@ -1367,6 +1373,12 @@ h1,
 
 .items.green-items .item .item-price .discount span {
   background: #47b39b !important;
+}
+
+.items.green-items .item .item-ex-date.special {
+  font-family: 'Alte Haas Grotesk';
+  font-weight: bold;
+  color: #47b39b !important;
 }
 
 .items.green-items .item:hover .item-wrapp .item-image .overlay-icon {
@@ -1436,6 +1448,12 @@ h1,
 
 .items.purple-items .item.free-item .item-price .price p {
   display: none;
+}
+
+.items.purple-items .item .item-ex-date.special {
+  font-family: 'Alte Haas Grotesk';
+  font-weight: bold;
+  color: #511948 !important;
 }
 
 .items.purple-items .item .item-price .price > p {
@@ -1513,6 +1531,12 @@ h1,
 
 .items.orange-items .item.free-item .item-price .price p {
   display: none;
+}
+
+.items.orange-items .item .item-ex-date.special {
+  font-family: 'Alte Haas Grotesk';
+  font-weight: bold;
+  color: #db5b46 !important;
 }
 
 .items.orange-items .item .item-price .price > p {
@@ -1769,6 +1793,27 @@ h1,
   position: absolute;
   left: 0;
   transition: all 0.3s ease-in-out;
+}
+
+.items .item .item-wrapp .item-details .item-ex-date {
+  font-size: 0.8rem;
+  color: #888;
+  margin-left: 24px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.items .item .item-wrapp .item-details .item-ex-date:before {
+  display: block;
+  content: '';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: url("../images/clock.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: -24px;
+  margin-top: -4px;
 }
 
 .items .item .item-wrapp .item-details .item-tag {
@@ -3882,6 +3927,12 @@ h1,
   color: #fec153;
 }
 
+.items.yellow-items .item .item-ex-date.special {
+  font-family: 'Alte Haas Grotesk';
+  font-weight: bold;
+  color: #fec153 !important;
+}
+
 .items.yellow-items .item:hover .item-wrapp .item-image .overlay-icon {
   display: block;
   background: url("../images/item-overlays.png") #fec153;
@@ -3942,6 +3993,12 @@ h1,
 
 .items.green-items .item .item-price .discount span {
   background: #47b39b !important;
+}
+
+.items.green-items .item .item-ex-date.special {
+  font-family: 'Alte Haas Grotesk';
+  font-weight: bold;
+  color: #47b39b !important;
 }
 
 .items.green-items .item:hover .item-wrapp .item-image .overlay-icon {
@@ -4011,6 +4068,12 @@ h1,
 
 .items.purple-items .item.free-item .item-price .price p {
   display: none;
+}
+
+.items.purple-items .item .item-ex-date.special {
+  font-family: 'Alte Haas Grotesk';
+  font-weight: bold;
+  color: #511948 !important;
 }
 
 .items.purple-items .item .item-price .price > p {
@@ -4088,6 +4151,12 @@ h1,
 
 .items.orange-items .item.free-item .item-price .price p {
   display: none;
+}
+
+.items.orange-items .item .item-ex-date.special {
+  font-family: 'Alte Haas Grotesk';
+  font-weight: bold;
+  color: #db5b46 !important;
 }
 
 .items.orange-items .item .item-price .price > p {
@@ -4344,6 +4413,27 @@ h1,
   position: absolute;
   left: 0;
   transition: all 0.3s ease-in-out;
+}
+
+.items .item .item-wrapp .item-details .item-ex-date {
+  font-size: 0.8rem;
+  color: #888;
+  margin-left: 24px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.items .item .item-wrapp .item-details .item-ex-date:before {
+  display: block;
+  content: '';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: url("../images/clock.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: -24px;
+  margin-top: -4px;
 }
 
 .items .item .item-wrapp .item-details .item-tag {
