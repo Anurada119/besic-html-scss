@@ -63,54 +63,87 @@
 .items {
     &.yellow-items {
         .item {
-            &.free-item{
-                .free-item-item{
-                    display: flex;
-                    width: 50px;
-                    height: 50px;
-                    border: 3px solid $yellow;
-                    border-radius: 50%;
-                    background-size: 100%;
-                    background-repeat: no-repeat;
-                    position: relative;
-                    font-size: 14px;
-                    line-height: 12px;
-                    justify-content: center;
-                    align-items: center;
-                    text-align: center;
-                    color: $yellow !important;
-                    &:before,
-                    &:after{
-                        content: '';
-                        width: 6px;
-                        height: 6px;
-                        background: $white;
-                        position: absolute;
-                        border-radius: 5px;
-                    }
-                    &:after{
-                        top: 2px;
-                        left: 3px;
-                    }
-                    &:before{
-                        top: 9px;
-                        left: -3px;
-                    }
+            .free-item-item{
+                display: flex;
+                width: 50px;
+                height: 50px;
+                border: 3px solid $yellow;
+                border-radius: 50%;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                position: relative;
+                font-size: 14px;
+                line-height: 12px;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                color: $yellow !important;
+                &:before,
+                &:after{
+                    content: '';
+                    width: 6px;
+                    height: 6px;
+                    background: $white;
+                    position: absolute;
+                    border-radius: 5px;
                 }
-                .item-price{
-                    .price{
-                        span{
-                            display: none !important;
-                            p{
-                                display: none !important;
-                            }
-                        }
-                        p{
-                            display: none;
-                        }
-                    }
+                &:after{
+                    top: 2px;
+                    left: 3px;
+                }
+                &:before{
+                    top: 9px;
+                    left: -3px;
                 }
             }
+            // &.free-item{
+            //     .free-item-item{
+            //         display: flex;
+            //         width: 50px;
+            //         height: 50px;
+            //         border: 3px solid $yellow;
+            //         border-radius: 50%;
+            //         background-size: 100%;
+            //         background-repeat: no-repeat;
+            //         position: relative;
+            //         font-size: 14px;
+            //         line-height: 12px;
+            //         justify-content: center;
+            //         align-items: center;
+            //         text-align: center;
+            //         color: $yellow !important;
+            //         &:before,
+            //         &:after{
+            //             content: '';
+            //             width: 6px;
+            //             height: 6px;
+            //             background: $white;
+            //             position: absolute;
+            //             border-radius: 5px;
+            //         }
+            //         &:after{
+            //             top: 2px;
+            //             left: 3px;
+            //         }
+            //         &:before{
+            //             top: 9px;
+            //             left: -3px;
+            //         }
+            //     }
+            //     .item-price{
+            //         .price{
+            //             span{
+            //                 display: none !important;
+            //                 p{
+            //                     display: none !important;
+            //                 }
+            //             }
+            //             p{
+            //                 display: none;
+            //             }
+            //         }
+            //     }
+            // }
             .item-price{
                 
 
@@ -194,54 +227,55 @@
     }
     &.green-items {
         .item {
-            &.free-item{
-                .free-item-item{
-                    display: flex;
-                    width: 50px;
-                    height: 50px;
-                    border: 3px solid $green;
-                    border-radius: 50%;
-                    background-size: 100%;
-                    background-repeat: no-repeat;
-                    position: relative;
-                    font-size: 14px;
-                    line-height: 12px;
-                    justify-content: center;
-                    align-items: center;
-                    text-align: center;
-                    color: $green !important;
-                    &:before,
-                    &:after{
-                        content: '';
-                        width: 6px;
-                        height: 6px;
-                        background: $white;
-                        position: absolute;
-                        border-radius: 5px;
-                    }
-                    &:after{
-                        top: 2px;
-                        left: 3px;
-                    }
-                    &:before{
-                        top: 9px;
-                        left: -3px;
-                    }
+            .free-item-item{
+                display: flex;
+                width: 50px;
+                height: 50px;
+                border: 3px solid $green;
+                border-radius: 50%;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                position: relative;
+                font-size: 14px;
+                line-height: 12px;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                color: $green !important;
+                &:before,
+                &:after{
+                    content: '';
+                    width: 6px;
+                    height: 6px;
+                    background: $white;
+                    position: absolute;
+                    border-radius: 5px;
                 }
-                .item-price{
-                    .price{
-                        span{
-                            display: none !important;
-                            p{
-                                display: none !important;
-                            }
-                        }
-                        p{
-                            display: none;
-                        }
-                    }
+                &:after{
+                    top: 2px;
+                    left: 3px;
+                }
+                &:before{
+                    top: 9px;
+                    left: -3px;
                 }
             }
+            // &.free-item{
+                
+            //     .item-price{
+            //         .price{
+            //             span{
+            //                 display: none !important;
+            //                 p{
+            //                     display: none !important;
+            //                 }
+            //             }
+            //             p{
+            //                 display: none;
+            //             }
+            //         }
+            //     }
+            // }
             .item-price{
                 
 
@@ -324,54 +358,55 @@
     }
     &.purple-items {
         .item {
-            &.free-item{
-                .free-item-item{
-                    display: flex;
-                    width: 50px;
-                    height: 50px;
-                    border: 3px solid $purple;
-                    border-radius: 50%;
-                    background-size: 100%;
-                    background-repeat: no-repeat;
-                    position: relative;
-                    font-size: 14px;
-                    line-height: 12px;
-                    justify-content: center;
-                    align-items: center;
-                    text-align: center;
-                    color: $purple !important;
-                    &:before,
-                    &:after{
-                        content: '';
-                        width: 6px;
-                        height: 6px;
-                        background: $white;
-                        position: absolute;
-                        border-radius: 5px;
-                    }
-                    &:after{
-                        top: 2px;
-                        left: 3px;
-                    }
-                    &:before{
-                        top: 9px;
-                        left: -3px;
-                    }
+            .free-item-item{
+                display: flex;
+                width: 50px;
+                height: 50px;
+                border: 3px solid $purple;
+                border-radius: 50%;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                position: relative;
+                font-size: 14px;
+                line-height: 12px;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                color: $purple !important;
+                &:before,
+                &:after{
+                    content: '';
+                    width: 6px;
+                    height: 6px;
+                    background: $white;
+                    position: absolute;
+                    border-radius: 5px;
                 }
-                .item-price{
-                    .price{
-                        span{
-                            display: none !important;
-                            p{
-                                display: none !important;
-                            }
-                        }
-                        p{
-                            display: none;
-                        }
-                    }
+                &:after{
+                    top: 2px;
+                    left: 3px;
+                }
+                &:before{
+                    top: 9px;
+                    left: -3px;
                 }
             }
+            // &.free-item{
+                
+            //     .item-price{
+            //         .price{
+            //             span{
+            //                 display: none !important;
+            //                 p{
+            //                     display: none !important;
+            //                 }
+            //             }
+            //             p{
+            //                 display: none;
+            //             }
+            //         }
+            //     }
+            // }
             .item-ex-date{
                 &.special{
                     @include Alte-bold;
@@ -455,54 +490,55 @@
     }
     &.orange-items {
         .item {
-            &.free-item{
-                .free-item-item{
-                    display: flex;
-                    width: 50px;
-                    height: 50px;
-                    border: 3px solid $orange;
-                    border-radius: 50%;
-                    background-size: 100%;
-                    background-repeat: no-repeat;
-                    position: relative;
-                    font-size: 14px;
-                    line-height: 12px;
-                    justify-content: center;
-                    align-items: center;
-                    text-align: center;
-                    color: $orange !important;
-                    &:before,
-                    &:after{
-                        content: '';
-                        width: 6px;
-                        height: 6px;
-                        background: $white;
-                        position: absolute;
-                        border-radius: 5px;
-                    }
-                    &:after{
-                        top: 2px;
-                        left: 3px;
-                    }
-                    &:before{
-                        top: 9px;
-                        left: -3px;
-                    }
+            .free-item-item{
+                display: flex;
+                width: 50px;
+                height: 50px;
+                border: 3px solid $orange;
+                border-radius: 50%;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                position: relative;
+                font-size: 14px;
+                line-height: 12px;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                color: $orange !important;
+                &:before,
+                &:after{
+                    content: '';
+                    width: 6px;
+                    height: 6px;
+                    background: $white;
+                    position: absolute;
+                    border-radius: 5px;
                 }
-                .item-price{
-                    .price{
-                        span{
-                            display: none !important;
-                            p{
-                                display: none !important;
-                            }
-                        }
-                        p{
-                            display: none;
-                        }
-                    }
+                &:after{
+                    top: 2px;
+                    left: 3px;
+                }
+                &:before{
+                    top: 9px;
+                    left: -3px;
                 }
             }
+            // &.free-item{
+                
+            //     .item-price{
+            //         .price{
+            //             span{
+            //                 display: none !important;
+            //                 p{
+            //                     display: none !important;
+            //                 }
+            //             }
+            //             p{
+            //                 display: none;
+            //             }
+            //         }
+            //     }
+            // }
 
             .item-ex-date{
                 &.special{
