@@ -63,6 +63,54 @@
 .items {
     &.yellow-items {
         .item {
+            &.free-item{
+                .free-item-item{
+                    display: flex;
+                    width: 50px;
+                    height: 50px;
+                    border: 3px solid $yellow;
+                    border-radius: 50%;
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                    position: relative;
+                    font-size: 14px;
+                    line-height: 12px;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    color: $yellow !important;
+                    &:before,
+                    &:after{
+                        content: '';
+                        width: 6px;
+                        height: 6px;
+                        background: $white;
+                        position: absolute;
+                        border-radius: 5px;
+                    }
+                    &:after{
+                        top: 2px;
+                        left: 3px;
+                    }
+                    &:before{
+                        top: 9px;
+                        left: -3px;
+                    }
+                }
+                .item-price{
+                    .price{
+                        span{
+                            display: none !important;
+                            p{
+                                display: none !important;
+                            }
+                        }
+                        p{
+                            display: none;
+                        }
+                    }
+                }
+            }
             .item-price{
                 
 
@@ -146,7 +194,54 @@
     }
     &.green-items {
         .item {
-            
+            &.free-item{
+                .free-item-item{
+                    display: flex;
+                    width: 50px;
+                    height: 50px;
+                    border: 3px solid $green;
+                    border-radius: 50%;
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                    position: relative;
+                    font-size: 14px;
+                    line-height: 12px;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    color: $green !important;
+                    &:before,
+                    &:after{
+                        content: '';
+                        width: 6px;
+                        height: 6px;
+                        background: $white;
+                        position: absolute;
+                        border-radius: 5px;
+                    }
+                    &:after{
+                        top: 2px;
+                        left: 3px;
+                    }
+                    &:before{
+                        top: 9px;
+                        left: -3px;
+                    }
+                }
+                .item-price{
+                    .price{
+                        span{
+                            display: none !important;
+                            p{
+                                display: none !important;
+                            }
+                        }
+                        p{
+                            display: none;
+                        }
+                    }
+                }
+            }
             .item-price{
                 
 
@@ -231,12 +326,37 @@
         .item {
             &.free-item{
                 .free-item-item{
-                    display: block;
+                    display: flex;
                     width: 50px;
                     height: 50px;
-                    background: url(../images/free.png);
+                    border: 3px solid $purple;
+                    border-radius: 50%;
                     background-size: 100%;
                     background-repeat: no-repeat;
+                    position: relative;
+                    font-size: 14px;
+                    line-height: 12px;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    color: $purple !important;
+                    &:before,
+                    &:after{
+                        content: '';
+                        width: 6px;
+                        height: 6px;
+                        background: $white;
+                        position: absolute;
+                        border-radius: 5px;
+                    }
+                    &:after{
+                        top: 2px;
+                        left: 3px;
+                    }
+                    &:before{
+                        top: 9px;
+                        left: -3px;
+                    }
                 }
                 .item-price{
                     .price{
@@ -337,12 +457,37 @@
         .item {
             &.free-item{
                 .free-item-item{
-                    display: block;
+                    display: flex;
                     width: 50px;
                     height: 50px;
-                    background: url(../images/free.png);
+                    border: 3px solid $orange;
+                    border-radius: 50%;
                     background-size: 100%;
                     background-repeat: no-repeat;
+                    position: relative;
+                    font-size: 14px;
+                    line-height: 12px;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    color: $orange !important;
+                    &:before,
+                    &:after{
+                        content: '';
+                        width: 6px;
+                        height: 6px;
+                        background: $white;
+                        position: absolute;
+                        border-radius: 5px;
+                    }
+                    &:after{
+                        top: 2px;
+                        left: 3px;
+                    }
+                    &:before{
+                        top: 9px;
+                        left: -3px;
+                    }
                 }
                 .item-price{
                     .price{
@@ -454,13 +599,14 @@
                 padding-bottom: 0;
                 .item-image {
                     .featured {
-                        width: 40px;
+                        width: 155px;
                         height: 40px;
                         position: absolute;
                         display: block;
-                        background: url('../images/item-overlays.png') !important;
-                        background-repeat: no-repeat;
-                        background-size: 76px !important;
+                        background: url('../images/featured.png') !important;
+                        background-repeat: no-repeat !important;
+                        background-size: cover;
+                        //background-size: 76px !important;
                         bottom: 1rem;
                         left: 1rem;
                         z-index: 3;
