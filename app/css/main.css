@@ -1311,8 +1311,10 @@ h1,
   border-radius: 50%;
   background-size: 100%;
   background-repeat: no-repeat;
+  font-family: 'Hanken';
+  font-weight: normal;
   position: relative;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 12px;
   justify-content: center;
   align-items: center;
@@ -1378,6 +1380,10 @@ h1,
   background-size: 30px;
 }
 
+.items.yellow-items .item.featured .item-wrapp .item-image {
+  height: 173px;
+}
+
 .items.yellow-items .item.featured .item-wrapp .item-image .featured {
   display: block;
   background: transparent;
@@ -1412,7 +1418,9 @@ h1,
   background-size: 100%;
   background-repeat: no-repeat;
   position: relative;
-  font-size: 14px;
+  font-family: 'Hanken';
+  font-weight: normal;
+  font-size: 16px;
   line-height: 12px;
   justify-content: center;
   align-items: center;
@@ -1481,6 +1489,10 @@ h1,
   background-size: 30px;
 }
 
+.items.green-items .item.featured .item-wrapp .item-image {
+  height: 173px;
+}
+
 .items.green-items .item.featured .item-wrapp .item-image .featured {
   display: block;
   background: transparent;
@@ -1510,7 +1522,9 @@ h1,
   background-size: 100%;
   background-repeat: no-repeat;
   position: relative;
-  font-size: 14px;
+  font-family: 'Hanken';
+  font-weight: normal;
+  font-size: 16px;
   line-height: 12px;
   justify-content: center;
   align-items: center;
@@ -1549,6 +1563,16 @@ h1,
 
 .items.purple-items .item .item-price .discount span {
   background: #511948 !important;
+  align-items: flex-end !important;
+  padding: 13px 1rem 13px 2rem !important;
+}
+
+.items.purple-items .item .item-price .discount span:before {
+  content: 'up to';
+  display: block;
+  position: absolute;
+  top: 10px;
+  font-size: 12px;
 }
 
 .items.purple-items .item:hover .item-wrapp .item-image .overlay-icon {
@@ -1577,6 +1601,10 @@ h1,
   background-repeat: no-repeat;
   background-position: -11px;
   background-size: 30px;
+}
+
+.items.purple-items .item.featured .item-wrapp .item-image {
+  height: 173px;
 }
 
 .items.purple-items .item.featured .item-wrapp .item-image .featured {
@@ -1608,7 +1636,9 @@ h1,
   background-size: 100%;
   background-repeat: no-repeat;
   position: relative;
-  font-size: 14px;
+  font-family: 'Hanken';
+  font-weight: normal;
+  font-size: 16px;
   line-height: 12px;
   justify-content: center;
   align-items: center;
@@ -1677,6 +1707,10 @@ h1,
   background-size: 30px;
 }
 
+.items.orange-items .item.featured .item-wrapp .item-image {
+  height: 173px;
+}
+
 .items.orange-items .item.featured .item-wrapp .item-image .featured {
   display: block;
   background: transparent;
@@ -1724,6 +1758,10 @@ h1,
   background: #fec153;
 }
 
+.items .item.featured .item-wrapp .item-price .discount span {
+  transform: translate(-21px, 0);
+}
+
 .items .item.promoted .item-wrapp .item-image {
   border: 5px solid #db5b46;
 }
@@ -1756,14 +1794,14 @@ h1,
 }
 
 .items .item .item-wrapp {
-  margin: 0 0.8rem 0 0;
+  margin: 0 0.8rem 8px 0;
   padding-bottom: 10px;
   background: #ffffff;
 }
 
 .items .item .item-wrapp .item-image {
   width: 100%;
-  height: 162px;
+  height: 177px;
   display: flex;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1813,7 +1851,7 @@ h1,
 .items .item .item-wrapp .item-details {
   width: 100%;
   display: block;
-  padding: 1rem;
+  padding: 1rem 1rem 0rem 1rem;
   min-height: 190px;
 }
 
@@ -1830,16 +1868,16 @@ h1,
 .items .item .item-wrapp .item-details .item-title {
   font-family: 'Hanken';
   font-weight: 300;
-  font-size: 1.2rem;
-  line-height: 1.2rem;
+  font-size: 20px;
+  line-height: 25px;
   margin-bottom: 1rem;
-  color: #525252;
+  color: #3A3A3A;
 }
 
 .items .item .item-wrapp .item-details .item-place {
   font-family: 'Alte Haas Grotesk';
   font-weight: normal;
-  font-size: 0.8rem;
+  font-size: 16px;
   text-transform: uppercase;
   margin-bottom: 10px;
   transition: all 0.3s ease-in-out;
@@ -1898,9 +1936,9 @@ h1,
 }
 
 .items .item .item-wrapp .item-details .item-ex-date {
-  font-size: 0.8rem;
+  font-size: 16px;
   color: #888;
-  margin-left: 24px;
+  margin-left: 30px;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
@@ -1908,21 +1946,22 @@ h1,
 .items .item .item-wrapp .item-details .item-ex-date:before {
   display: block;
   content: '';
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   position: absolute;
   background: url("../images/clock.png");
   background-repeat: no-repeat;
   background-size: cover;
-  margin-left: -24px;
+  margin-left: -30px;
   margin-top: -4px;
 }
 
 .items .item .item-wrapp .item-details .item-tag {
   font-family: 'Alte Haas Grotesk';
   font-weight: normal;
-  font-size: 10px;
+  font-size: 14px;
   margin-bottom: 0px;
+  margin-bottom: 16px;
 }
 
 .items .item .item-wrapp .item-price {
@@ -1930,18 +1969,18 @@ h1,
   justify-content: space-between;
   font-family: 'Hanken';
   font-weight: normal;
-  font-size: 21px;
+  font-size: 25px;
   color: #000000;
   margin: 0;
   transition: all 0.3s ease-in-out;
-  padding: 1rem;
+  padding: 1rem 1rem 0.6rem 1rem;
 }
 
 .items .item .item-wrapp .item-price .price span {
   font-family: 'Hanken';
   font-weight: 300;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 14px;
+  line-height: 14px;
   margin: 0;
   position: relative;
   transform: translate(0, 2px);
@@ -1954,7 +1993,7 @@ h1,
 .items .item .item-wrapp .item-price .price span p {
   display: inline-block;
   position: relative;
-  margin-bottom: 3px;
+  margin-bottom: 0px;
 }
 
 .items .item .item-wrapp .item-price .price span p:after {
@@ -1964,7 +2003,7 @@ h1,
   background: #7e8890;
   display: block;
   position: absolute;
-  top: 8px;
+  top: 6px;
   left: -10%;
 }
 
@@ -1972,6 +2011,7 @@ h1,
   width: 100%;
   text-align: right;
   margin-bottom: 0;
+  line-height: 36px;
 }
 
 .items .item .item-wrapp .item-price .discount {
@@ -1986,14 +2026,19 @@ h1,
   background: #fec153;
   margin: 0 !important;
   line-height: 0 !important;
-  height: 50px;
-  padding: 10px 1rem !important;
+  height: 42px;
+  font-size: 22px;
+  padding: 10px 1rem 10px 2rem;
   transform: translate(-16px, 0);
   color: #ffffff !important;
 }
 
 .items .item .item-wrapp .item-price .discount span:after {
   display: none;
+}
+
+.items .item:hover .item-wrapp:hover {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .items .item:hover .item-wrapp .item-image:after {
@@ -4033,8 +4078,10 @@ h1,
   border-radius: 50%;
   background-size: 100%;
   background-repeat: no-repeat;
+  font-family: 'Hanken';
+  font-weight: normal;
   position: relative;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 12px;
   justify-content: center;
   align-items: center;
@@ -4100,6 +4147,10 @@ h1,
   background-size: 30px;
 }
 
+.items.yellow-items .item.featured .item-wrapp .item-image {
+  height: 173px;
+}
+
 .items.yellow-items .item.featured .item-wrapp .item-image .featured {
   display: block;
   background: transparent;
@@ -4134,7 +4185,9 @@ h1,
   background-size: 100%;
   background-repeat: no-repeat;
   position: relative;
-  font-size: 14px;
+  font-family: 'Hanken';
+  font-weight: normal;
+  font-size: 16px;
   line-height: 12px;
   justify-content: center;
   align-items: center;
@@ -4203,6 +4256,10 @@ h1,
   background-size: 30px;
 }
 
+.items.green-items .item.featured .item-wrapp .item-image {
+  height: 173px;
+}
+
 .items.green-items .item.featured .item-wrapp .item-image .featured {
   display: block;
   background: transparent;
@@ -4232,7 +4289,9 @@ h1,
   background-size: 100%;
   background-repeat: no-repeat;
   position: relative;
-  font-size: 14px;
+  font-family: 'Hanken';
+  font-weight: normal;
+  font-size: 16px;
   line-height: 12px;
   justify-content: center;
   align-items: center;
@@ -4271,6 +4330,16 @@ h1,
 
 .items.purple-items .item .item-price .discount span {
   background: #511948 !important;
+  align-items: flex-end !important;
+  padding: 13px 1rem 13px 2rem !important;
+}
+
+.items.purple-items .item .item-price .discount span:before {
+  content: 'up to';
+  display: block;
+  position: absolute;
+  top: 10px;
+  font-size: 12px;
 }
 
 .items.purple-items .item:hover .item-wrapp .item-image .overlay-icon {
@@ -4299,6 +4368,10 @@ h1,
   background-repeat: no-repeat;
   background-position: -11px;
   background-size: 30px;
+}
+
+.items.purple-items .item.featured .item-wrapp .item-image {
+  height: 173px;
 }
 
 .items.purple-items .item.featured .item-wrapp .item-image .featured {
@@ -4330,7 +4403,9 @@ h1,
   background-size: 100%;
   background-repeat: no-repeat;
   position: relative;
-  font-size: 14px;
+  font-family: 'Hanken';
+  font-weight: normal;
+  font-size: 16px;
   line-height: 12px;
   justify-content: center;
   align-items: center;
@@ -4399,6 +4474,10 @@ h1,
   background-size: 30px;
 }
 
+.items.orange-items .item.featured .item-wrapp .item-image {
+  height: 173px;
+}
+
 .items.orange-items .item.featured .item-wrapp .item-image .featured {
   display: block;
   background: transparent;
@@ -4446,6 +4525,10 @@ h1,
   background: #fec153;
 }
 
+.items .item.featured .item-wrapp .item-price .discount span {
+  transform: translate(-21px, 0);
+}
+
 .items .item.promoted .item-wrapp .item-image {
   border: 5px solid #db5b46;
 }
@@ -4478,14 +4561,14 @@ h1,
 }
 
 .items .item .item-wrapp {
-  margin: 0 0.8rem 0 0;
+  margin: 0 0.8rem 8px 0;
   padding-bottom: 10px;
   background: #ffffff;
 }
 
 .items .item .item-wrapp .item-image {
   width: 100%;
-  height: 162px;
+  height: 177px;
   display: flex;
   background-repeat: no-repeat;
   background-size: cover;
@@ -4535,7 +4618,7 @@ h1,
 .items .item .item-wrapp .item-details {
   width: 100%;
   display: block;
-  padding: 1rem;
+  padding: 1rem 1rem 0rem 1rem;
   min-height: 190px;
 }
 
@@ -4552,16 +4635,16 @@ h1,
 .items .item .item-wrapp .item-details .item-title {
   font-family: 'Hanken';
   font-weight: 300;
-  font-size: 1.2rem;
-  line-height: 1.2rem;
+  font-size: 20px;
+  line-height: 25px;
   margin-bottom: 1rem;
-  color: #525252;
+  color: #3A3A3A;
 }
 
 .items .item .item-wrapp .item-details .item-place {
   font-family: 'Alte Haas Grotesk';
   font-weight: normal;
-  font-size: 0.8rem;
+  font-size: 16px;
   text-transform: uppercase;
   margin-bottom: 10px;
   transition: all 0.3s ease-in-out;
@@ -4620,9 +4703,9 @@ h1,
 }
 
 .items .item .item-wrapp .item-details .item-ex-date {
-  font-size: 0.8rem;
+  font-size: 16px;
   color: #888;
-  margin-left: 24px;
+  margin-left: 30px;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
@@ -4630,21 +4713,22 @@ h1,
 .items .item .item-wrapp .item-details .item-ex-date:before {
   display: block;
   content: '';
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   position: absolute;
   background: url("../images/clock.png");
   background-repeat: no-repeat;
   background-size: cover;
-  margin-left: -24px;
+  margin-left: -30px;
   margin-top: -4px;
 }
 
 .items .item .item-wrapp .item-details .item-tag {
   font-family: 'Alte Haas Grotesk';
   font-weight: normal;
-  font-size: 10px;
+  font-size: 14px;
   margin-bottom: 0px;
+  margin-bottom: 16px;
 }
 
 .items .item .item-wrapp .item-price {
@@ -4652,18 +4736,18 @@ h1,
   justify-content: space-between;
   font-family: 'Hanken';
   font-weight: normal;
-  font-size: 21px;
+  font-size: 25px;
   color: #000000;
   margin: 0;
   transition: all 0.3s ease-in-out;
-  padding: 1rem;
+  padding: 1rem 1rem 0.6rem 1rem;
 }
 
 .items .item .item-wrapp .item-price .price span {
   font-family: 'Hanken';
   font-weight: 300;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 14px;
+  line-height: 14px;
   margin: 0;
   position: relative;
   transform: translate(0, 2px);
@@ -4676,7 +4760,7 @@ h1,
 .items .item .item-wrapp .item-price .price span p {
   display: inline-block;
   position: relative;
-  margin-bottom: 3px;
+  margin-bottom: 0px;
 }
 
 .items .item .item-wrapp .item-price .price span p:after {
@@ -4686,7 +4770,7 @@ h1,
   background: #7e8890;
   display: block;
   position: absolute;
-  top: 8px;
+  top: 6px;
   left: -10%;
 }
 
@@ -4694,6 +4778,7 @@ h1,
   width: 100%;
   text-align: right;
   margin-bottom: 0;
+  line-height: 36px;
 }
 
 .items .item .item-wrapp .item-price .discount {
@@ -4708,14 +4793,19 @@ h1,
   background: #fec153;
   margin: 0 !important;
   line-height: 0 !important;
-  height: 50px;
-  padding: 10px 1rem !important;
+  height: 42px;
+  font-size: 22px;
+  padding: 10px 1rem 10px 2rem;
   transform: translate(-16px, 0);
   color: #ffffff !important;
 }
 
 .items .item .item-wrapp .item-price .discount span:after {
   display: none;
+}
+
+.items .item:hover .item-wrapp:hover {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .items .item:hover .item-wrapp .item-image:after {
