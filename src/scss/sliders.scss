@@ -154,10 +154,12 @@
                     }
                 }
             }
-            .item-ex-date{
-                &.special{
-                    @include Alte-bold;
-                    color: $yellow !important;
+            .item-ex{
+                .item-ex-date{
+                    &.special{
+                        @include Alte-bold;
+                        color: $yellow !important;
+                    }
                 }
             }
             outline: none;
@@ -294,10 +296,12 @@
                     }
                 }
             }
-            .item-ex-date{
-                &.special{
-                    @include Alte-bold;
-                    color: $green !important;
+            .item-ex{
+                .item-ex-date{
+                    &.special{
+                        @include Alte-bold;
+                        color: $green !important;
+                    }
                 }
             }
             outline: none;
@@ -412,10 +416,12 @@
             //         }
             //     }
             // }
-            .item-ex-date{
-                &.special{
-                    @include Alte-bold;
-                    color: $purple !important;
+            .item-ex{
+                .item-ex-date{
+                    &.special{
+                        @include Alte-bold;
+                        color: $purple !important;
+                    }
                 }
             }
             
@@ -557,10 +563,12 @@
             //     }
             // }
 
-            .item-ex-date{
-                &.special{
-                    @include Alte-bold;
-                    color: $orange !important;
+            .item-ex{
+                .item-ex-date{
+                    &.special{
+                        @include Alte-bold;
+                        color: $orange !important;
+                    }
                 }
             }
             
@@ -649,7 +657,7 @@
         &.featured {
             //start of featured
             .item-wrapp {
-                border: 5px solid $orange;
+                border: 3px solid $orange;
                 padding-bottom: 0;
                 .item-image {
                     .featured {
@@ -718,7 +726,7 @@
         }
         .item-wrapp {
             margin: 0 0.8rem 8px 0;
-            padding-bottom: 10px;
+            padding-bottom: 2px;
             background: $white;
             .item-image {
                 width: 100%;
@@ -770,7 +778,7 @@
                 width: 100%;
                 display: block;
                 padding: 1rem 1rem 0rem 1rem;
-                min-height: 190px;
+                min-height: 150px;
                 h1,
                 h2,
                 h3,
@@ -787,6 +795,13 @@
                     margin-bottom: 1rem;
                     
                     color: $newfont-col1;
+                }
+                .item-body-details{
+                    margin: 0;
+                    @include Alte-regular;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: $new-font-col2;
                 }
                 .item-place {
                     @include Alte-regular;
@@ -841,11 +856,21 @@
                         @include transition-basic;
                     }
                 }
+                
+                .item-tag {
+                    @include Alte-regular;
+                    font-size: 14px;
+                    margin-bottom: 0px;
+                    margin-bottom: 16px;
+                }
+            }
+            .item-ex{
+                display: block;
                 .item-ex-date{
                     font-size: 16px;
                     color: #888;
-                    margin-left: 30px;
-                    margin-top: 0.5rem;
+                    margin-left: 44px;
+                    margin-top: 1.5rem;
                     margin-bottom: 0.5rem;
                     &:before{
                         display: block;
@@ -859,12 +884,9 @@
                         margin-left: -30px;
                         margin-top: -4px;
                     }
-                }
-                .item-tag {
-                    @include Alte-regular;
-                    font-size: 14px;
-                    margin-bottom: 0px;
-                    margin-bottom: 16px;
+                    span{
+                        @include Alte-bold;
+                    }
                 }
             }
             .item-price {
