@@ -180,13 +180,47 @@
                      border-radius: 40px;
                      content: '';
                      background: $purple;
+                     background-repeat: no-repeat;
+                     background-size: cover;
                      margin-right: 10px;
                      margin-bottom: 20px;
                      position: absolute;
                      top: -10px;
                      left: -10px;
                  }
+                 &.point-1{
+                    &:before{
+                        background-image: url('../images/events.png');
+                    }
+                }
+                &.point-2{
+                    &:before{
+                        background-image: url('../images/ticketsales.png');
+                    }
+                }
+                &.point-3{
+                    &:before{
+                        background-image: url('../images/guestlist.png');
+                    }
+                }
+                &.point-4{
+                    &:before{
+                        background-image: url('../images/selfservice.png');
+                    }
+                }
+                &.point-5{
+                    &:before{
+                        background-image: url('../images/earlybird.png');
+                    }
+                }
+                &.point-6{
+                    &:before{
+                        background-image: url('../images/payments.png');
+                    }
+                }
+    
             }
+            
         }
     }
     .who-frugl{

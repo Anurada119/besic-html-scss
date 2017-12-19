@@ -2653,6 +2653,12 @@ h1,
 .filter-section {
   padding: 0 15px;
   margin-bottom: 15px;
+  font-family: 'Alte Haas Grotesk';
+  font-weight: normal;
+}
+
+.filter-section .card-header {
+  background: #ffffff !important;
 }
 
 .filter-section .category-switch {
@@ -2672,17 +2678,104 @@ h1,
   margin: 0 0 0 15px;
 }
 
+.filter-section .frgl-filters .filter div.dropdown-menu {
+  width: 320px;
+  padding: 0;
+  border-radius: 0;
+}
+
+.filter-section .frgl-filters .filter div.dropdown-menu a {
+  padding: 1rem;
+  border-bottom: 1px solid #eaeced;
+}
+
+.filter-section .frgl-filters .filter div.dropdown-menu a.active {
+  color: #DA5B46;
+  background: transparent;
+  font-family: 'Alte Haas Grotesk';
+  font-weight: bold;
+}
+
+.filter-section .frgl-filters .filter div .buttons-set {
+  padding: 0.5rem 1rem;
+  display: flex;
+}
+
+.filter-section .frgl-filters .filter div .buttons-set a {
+  padding: 0.5rem 1rem;
+  border: 2px solid #ddd;
+  border-radius: 2rem;
+  width: 50%;
+  text-align: center;
+  display: block;
+  color: #7E858D;
+  font-family: 'Alte Haas Grotesk';
+  font-weight: normal;
+}
+
+.filter-section .frgl-filters .filter div .buttons-set a:first-child {
+  margin-right: 0.5rem;
+}
+
+.filter-section .frgl-filters .filter div .buttons-set a:last-child {
+  margin-left: 0.5rem;
+}
+
+.filter-section .frgl-filters .filter div .buttons-set a.reset {
+  border-color: #7e8890;
+}
+
+.filter-section .frgl-filters .filter div .buttons-set a.ok {
+  border-color: #DA5B46;
+}
+
+.filter-section .frgl-filters .filter .pickdate-show {
+  display: flex;
+  padding: 1rem;
+  border-bottom: 1px solid #eaeced;
+}
+
+.filter-section .frgl-filters .filter .pickdate-show div {
+  display: flex;
+}
+
+.filter-section .frgl-filters .filter .pickdate-show div label {
+  font-family: 'Alte Haas Grotesk';
+  font-weight: bold;
+  color: #DA5B46;
+  line-height: 40px;
+  padding-right: 5px;
+  margin: 0;
+}
+
+.filter-section .frgl-filters .filter .pickdate-show div input {
+  border-radius: 0;
+  border: 1px solid #7e8890;
+  height: 40px;
+  background: #f2f2f2;
+  background-image: url("../images/date-icon.png");
+  background-repeat: no-repeat;
+  background-position: 95%;
+  background-size: 24px;
+}
+
+.filter-section .frgl-filters .filter .pickdate-show div.from {
+  padding-right: 5px;
+}
+
 .filter-section .frgl-filters .dropdown button {
   background: none;
   border: none !important;
   border-color: transparent !important;
   outline: none;
   color: #525252;
+  cursor: pointer;
 }
 
 .filter-section .frgl-filters .dropdown button:focus {
   outline: none !important;
   border: none !important;
+  box-shadow: none !important;
 }
 
 .filter-section .frgl-filters .dropdown button:active, .filter-section .frgl-filters .dropdown button.nice-select.open {
@@ -2707,10 +2800,15 @@ h1,
   width: 100vw;
   max-width: 320px;
   background: #ffffff;
+  top: 38px;
 }
 
 .filter-section .frgl-filters .filteing .filters-menu .card {
   border-radius: 0;
+  border-bottom: 1px solid #ffffff;
+}
+
+.filter-section .frgl-filters .filteing .filters-menu .card:last-child {
   border-bottom: 1px solid #eaeced;
 }
 
@@ -2718,6 +2816,10 @@ h1,
   border: none;
   border-radius: 0;
   padding: 1rem 1rem;
+}
+
+.filter-section .frgl-filters .filteing .filters-menu .card-body {
+  padding: 1.5rem 2rem;
 }
 
 .filter-section .frgl-filters .filteing .filters-menu a {
@@ -2732,13 +2834,17 @@ h1,
   width: 20px;
   height: 20px;
   outline: none !important;
-  border-color: #DA5B46;
+  border-color: #7e8890;
   background: #ffffff !important;
 }
 
 .ui-slider .ui-slider-handle:active, .ui-slider .ui-slider-handle.nice-select.open {
   background: #ffffff !important;
   border-color: #DA5B46;
+}
+
+.ui-widget.ui-widget-content {
+  background: #7E858D;
 }
 
 .mb-0 a {
@@ -2795,7 +2901,7 @@ html .ui-button.ui-state-disabled.nice-select.open {
 }
 
 .ui-widget-header {
-  background: #DA5B46;
+  background: #fec153;
 }
 
 .item-section-header.mobile {
@@ -3907,6 +4013,11 @@ input:checked + .slider:before {
 .nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {
   background: transparent;
   color: #DA5B46;
+}
+
+.dropdown-item:active, .dropdown-item.nice-select.open {
+  background: transparent !important;
+  color: #7E858D;
 }
 
 h1,
@@ -5220,11 +5331,37 @@ h1,
   border-radius: 40px;
   content: '';
   background: #511948;
+  background-repeat: no-repeat;
+  background-size: cover;
   margin-right: 10px;
   margin-bottom: 20px;
   position: absolute;
   top: -10px;
   left: -10px;
+}
+
+.fr-work-with-us .frugl-points div h2.point-1:before {
+  background-image: url("../images/events.png");
+}
+
+.fr-work-with-us .frugl-points div h2.point-2:before {
+  background-image: url("../images/ticketsales.png");
+}
+
+.fr-work-with-us .frugl-points div h2.point-3:before {
+  background-image: url("../images/guestlist.png");
+}
+
+.fr-work-with-us .frugl-points div h2.point-4:before {
+  background-image: url("../images/selfservice.png");
+}
+
+.fr-work-with-us .frugl-points div h2.point-5:before {
+  background-image: url("../images/earlybird.png");
+}
+
+.fr-work-with-us .frugl-points div h2.point-6:before {
+  background-image: url("../images/payments.png");
 }
 
 .fr-work-with-us .who-frugl {

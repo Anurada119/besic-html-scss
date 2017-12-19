@@ -845,6 +845,10 @@ body {
 .filter-section {
     padding: 0 15px;
     margin-bottom: 15px;
+    @include Alte-regular;
+    .card-header{
+        background: $white !important;
+    }
     .category-switch {
         display: none;
         @include Alte-regular;
@@ -857,6 +861,76 @@ body {
         justify-content: flex-end;
         .filter {
             margin: 0 0 0 15px;
+            div{
+               &.dropdown-menu{
+                   width: 320px;
+                   padding: 0;
+                   border-radius: 0;
+                   a{
+                       padding: 1rem;
+                       border-bottom: 1px solid $background;
+                       &.active{
+                           color: $orange;
+                           background: transparent;
+                           @include Alte-bold;
+                       }
+                   }
+               }
+               .buttons-set{
+                   padding: 0.5rem 1rem;
+                   display: flex;
+                   a{
+                       padding: 0.5rem 1rem;
+                       border: 2px solid #ddd;
+                       border-radius: 2rem;
+                       width: 50%;
+                       text-align: center;
+                       display: block;
+                       color: $new-font-col2;
+                       @include Alte-regular;
+                       &:first-child{
+                           margin-right: 0.5rem;
+                       }
+                       &:last-child{
+                           margin-left: 0.5rem;
+                       }
+                       &.reset{
+                           border-color: $medium-gray;
+                       }
+                       &.ok{
+                           border-color: $orange;
+                       }
+                   }
+               } 
+            }
+            .pickdate-show{
+                display: flex;
+                padding: 1rem;
+                border-bottom: 1px solid $background;
+                div{
+                    display: flex;
+                    label{
+                        @include Alte-bold;
+                        color: $orange;
+                        line-height: 40px;
+                        padding-right: 5px;
+                        margin: 0;
+                    }
+                    input{
+                        border-radius: 0;
+                        border: 1px solid $medium-gray;
+                        height: 40px;
+                        background: #f2f2f2;
+                        background-image: url('../images/date-icon.png');
+                        background-repeat: no-repeat;
+                        background-position: 95%;
+                        background-size: 24px;
+                    }
+                    &.from{
+                        padding-right: 5px;
+                    }
+                }
+            }
         }
         .dropdown {
             button {
@@ -865,9 +939,11 @@ body {
                 border-color: transparent !important;
                 outline: none;
                 color: $dark-gray;
+                cursor: pointer;
                 &:focus {
                     outline: none !important;
                     border: none !important;
+                    box-shadow: none !important;
                 }
                 &:active {
                     outline: none !important;
@@ -889,14 +965,21 @@ body {
                 width: 100vw;
                 max-width: 320px;
                 background: $white;
+                top: 38px;
                 .card {
                     border-radius: 0;
-                    border-bottom: 1px solid $background;
+                    border-bottom: 1px solid $white;
+                    &:last-child{
+                        border-bottom: 1px solid $background;
+                    }
                 }
                 .card-header {
                     border: none;
                     border-radius: 0;
                     padding: 1rem 1rem;
+                }
+                .card-body{
+                    padding: 1.5rem 2rem;
                 }
                 a {
                     @include Alte-regular;
@@ -914,12 +997,16 @@ body {
     width: 20px;
     height: 20px;
     outline: none !important;
-    border-color: $orange;
+    border-color: $medium-gray;
     background: $white !important;
     &:active {
         background: $white !important;
         border-color: $orange;
     }
+}
+
+.ui-widget.ui-widget-content{
+    background: $new-font-col2;
 }
 
 .mb-0 {
@@ -976,7 +1063,7 @@ html .ui-button.ui-state-disabled:active {
 }
 
 .ui-widget-header {
-    background: $orange;
+    background: $yellow;
 }
 
 .item-section-header.mobile {
@@ -2024,6 +2111,12 @@ input:checked+.slider:before {
     color: $orange;
 }
 
+.dropdown-item{
+    &:active{
+        background: transparent !important;
+        color: $new-font-col2; 
+    }
+}
 
 
 @import 'megamenu';
