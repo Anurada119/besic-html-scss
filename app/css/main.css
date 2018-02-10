@@ -4020,6 +4020,51 @@ input:checked + .slider:before {
   color: #7E858D;
 }
 
+.frgl-filters.mobile .filter button {
+  background: transparent;
+  color: #525252;
+  border: none;
+  outline: none;
+}
+
+.frgl-filters.mobile .filter button:hover {
+  background: transparent;
+  color: #525252;
+  border: none;
+  outline: none;
+}
+
+.frgl-filters.mobile .filter button:focus {
+  border: none;
+  outline: none;
+  box-shadow: none !important;
+}
+
+.frgl-filters.mobile .filter .modal-body {
+  padding: 0;
+}
+
+.frgl-filters.mobile .filter .modal-body .card {
+  border: none;
+  border-bottom: 1px solid #eaeced;
+}
+
+.frgl-filters.mobile .filter .modal-body .dropdown-item {
+  padding: 1rem 1rem;
+}
+
+.frgl-filters.mobile .filter .modal-body .dropdown-item:focus {
+  background: #DA5B46;
+}
+
+.frgl-filters.mobile {
+  display: none;
+}
+
+.frgl-filters.desktop {
+  display: flex;
+}
+
 h1,
 .h1 {
   font-size: 36px;
@@ -6042,6 +6087,14 @@ h1,
   .fr-work-with-us .who-frugl div a:hover {
     color: #ffffff;
     cursor: pointer;
+  }
+
+  .frgl-filters.mobile {
+    display: flex;
+  }
+
+  .frgl-filters.desktop {
+    display: none;
   }
 }
 

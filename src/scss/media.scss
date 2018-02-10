@@ -593,6 +593,14 @@
                 }
             }
         }
+
+        .frgl-filters.mobile{
+            display: flex;
+        }
+        
+        .frgl-filters.desktop{
+            display: none;
+        }
     }
     
     @media screen and (max-width:360px) {
